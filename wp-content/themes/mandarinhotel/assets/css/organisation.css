@@ -1,0 +1,87 @@
+.service-organisation{
+    margin-top:11%;
+}
+
+.heading .title h1 {
+    font-family: "Palatino Linotype";
+    font-size: 44px;
+    font-weight: 400;
+    letter-spacing: -0.825px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.heading .title {
+    width: 900px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.heading .description {
+    width: 80%;
+    display: block;
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+
+.section-content .content h2{
+    color: #141617;
+    font-family: "Palatino Linotype";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.section-content .description{
+    color: #141617;
+    font-family: 'poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.24px;
+}
+
+.section-content .description p{
+    color: #141617;
+    font-family: 'poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.24px;
+}
+
+.section-content{
+    padding: 0 30px;
+    margin-top: 60px;
+}
+
+.section-content .image {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-content .image img{
+    width:100%;
+    object-fit:cover;
+}
+
+.gal-fancy{
+    margin-top: 60px;
+}
+
+.gal-fancy .gal-item:hover{
+    width: 100%;
+    height: 424px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gal-fancy .gal-item img{
+    width: 100%;
+    height: 424px;
+    object-fit:cover;
+}

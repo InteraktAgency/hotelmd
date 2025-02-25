@@ -1,0 +1,80 @@
+.heading .title h1 {
+    font-family: "Palatino Linotype";
+    font-size: 44px;
+    font-weight: 400;
+    letter-spacing: -0.825px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.heading .title {
+    width: 900px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.offers-hotel {
+    margin-top: 40px;
+}
+
+.heading .description {
+    width: 80%;
+    display: block;
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+
+.heading .description p {
+    color: #141617;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.24px
+}
+
+.list-offers .item-img{
+    width: 100%;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.list-offers .item-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.list-offers .item h2{
+    color: #000;
+    font-family: "Palatino Linotype";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.list-offers .item a{
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+.list-offers{
+    margin-top: 50px;
+}
+
+.list-offers .item{
+    margin-bottom: 40px;
+}
+
+.list-offers .item-img:hover img{
+    transform: scale(1.1);
+    transition: .5s;
+}

@@ -1,0 +1,103 @@
+
+.heading .title h1 {
+    font-family: "Palatino Linotype";
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -0.825px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.heading .title {
+    width: 900px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.service-hotel {
+    margin-top: 40px;
+}
+
+.heading .description {
+    width: 80%;
+    display: block;
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+
+.heading .description p {
+    color: #141617;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.24px
+}
+
+.item-featured {
+    position: relative;
+    overflow: hidden;
+    height: 230px;
+}
+
+.item-featured h2:after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    transition: .5s;
+}
+
+.item-featured:hover h2:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transition: .5s;
+}
+
+.item-featured:hover a::after{
+    position: absolute;
+    content: '';
+    background-color: #14161742;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    transition: .5s;
+}
+
+.item-featured:hover img{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.item h2 {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    color: #fff;
+    font-family: "Palatino Linotype";
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+    font-size: 25px;
+    padding-bottom: 20px;
+    z-index: 66;
+}
+
+.item-featured img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.list-experiences{
+    margin-top: 50px;
+}

@@ -1,0 +1,310 @@
+.slider .swiper-slide img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.slider .swiper-slide {
+    height: 700px;
+    overflow: hidden;
+}
+
+.slider .swiper-button-next:after,
+.swiper-button-prev:after {
+    display: none;
+}
+
+.slider .swiper-button-prev {
+    left: 35px;
+}
+
+.slider .swiper-button-next {
+    right: 35px;
+}
+
+.heading .title h1 {
+    font-family: "Palatino Linotype";
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -0.825px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.heading .title {
+    width: 900px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.service-hotel {
+    margin-top: 40px;
+}
+
+.heading .description {
+    width: 80%;
+    display: block;
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+
+.heading .description p {
+    color: #141617;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.24px
+}
+
+.list-services {
+    display: flex;
+    align-items: start;
+    gap: 0;
+}
+
+.list-services .item img {
+    width: 100%;
+    height: 335px;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.list-services .item .item-featured {
+    position: relative;
+    overflow: hidden;
+}
+
+.list-services .item h2 {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    color: #fff;
+    font-family: "Palatino Linotype";
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+    font-size: 35px;
+    padding-bottom: 20px;
+    z-index: 66;
+}
+
+.list-services .item-content {
+    padding: 30px 25px;
+    color: #141617;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.24px;
+    line-height: 27px;
+    height: 195px;
+}
+
+.list-services .read-more {
+    padding: 0 25px;
+}
+
+
+.list-services .item-featured h2:after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    transition: .5s;
+}
+
+.list-services .item-featured:hover h2:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transition: .5s;
+}
+
+.list-services .item {
+    width: 100%;
+}
+
+.list-services .item-featured:hover a::after{
+    position: absolute;
+    content: '';
+    background-color: #14161742;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    transition: .5s;
+}
+
+.list-services .item-featured:hover img{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+
+.galerie{
+    margin-top: 50px;
+}
+
+.galerie .video-ytb{
+    height:400px;
+}
+
+.galerie .img{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.galerie iframe{
+    height: 400px;
+}
+
+.galerie .img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.items-turk .list-img{
+    display: flex;
+    width: 60%;
+    position: relative;
+}
+
+.items-turk .list-img .item{
+    height: 460px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.items-turk .list-img .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.items-turk .list-img .item:hover img{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.items-turk{
+    display: flex;
+    gap: 0;
+}
+
+.items-turk .img-right{
+    width: 40%;
+    height: 460px;
+    position: relative;
+    overflow: hidden;
+}
+
+.items-turk .img-right img{
+    width: 100%;
+}
+
+.galerie .content-gal{
+    position: absolute;
+    top: -10%;
+    bottom: 0;
+    right: 40px;
+    height: 100%;
+    width: 215px;
+    transform: translateY(40%);
+}
+
+.galerie .content-gal h2{
+    font-family: "Palatino Linotype";
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.24px;
+}
+
+.galerie .btn-read{
+    margin-top: 20px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding: 10px 60px;
+    border-radius: 0;
+    font-family: 'Poppins';
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.galerie .btn-read:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff;
+}
+
+.content-turk h2{
+    font-family: "Palatino Linotype";
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.24px;
+}
+
+.section-turk{
+    position: relative;
+}
+
+.section-turk .content-turk{
+    position: absolute;
+    bottom: 100px;
+    left:20px;
+}
+
+.experiences-hotel .item{
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+}
+
+.experiences-hotel .item h3{
+    position: absolute;
+    bottom: 23px;
+    left: 30px;
+    color: #fff;
+    font-size: 35px;
+    font-family: "Palatino Linotype";
+    font-weight: 700; 
+    text-transform: uppercase;
+}
+
+.experiences-hotel .item .img-featured{
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.experiences-hotel .item:hover .img-featured{
+    transform: scale(1.1);
+}
+
+.experiences-hotel .icon{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.experiences-hotel .icon img{
+    width: 62px;
+    height: auto;
+}
