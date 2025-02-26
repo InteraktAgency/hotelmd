@@ -1,0 +1,48 @@
+.job-section{
+    margin-top: 11%;
+}
+
+.custom-header {
+    position: unset;
+    height: unset;
+}
+
+.custom-header .navbar-custom {
+    background: black;
+}
+
+.container-page {
+    width: 50%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    border: none;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: gray;
+}
