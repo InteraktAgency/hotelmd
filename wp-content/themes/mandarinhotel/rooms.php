@@ -15,13 +15,11 @@ get_header();
                 <div class="item-room">
                     <h2><?php the_sub_field('title') ?></h2>
                     <div class="swiper-slider-rooms">
-
                         <div class="swiper-wrapper">
                             <?php
                             $images = get_sub_field('galeries');
                             if ($images):
                                 foreach ($images as $image):
-                                    
                             ?>
                                     <div class="swiper-slide">
                                         <img src="<?php echo esc_url($image['url']); ?>" alt="Galerie">

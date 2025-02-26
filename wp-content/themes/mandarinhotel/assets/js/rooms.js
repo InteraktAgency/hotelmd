@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function() {
     const swiper = new Swiper('.swiper-slider-rooms', {
         direction: 'horizontal',
         loop: true,

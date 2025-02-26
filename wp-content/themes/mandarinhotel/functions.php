@@ -146,7 +146,6 @@ function enqueue_custom_styles()
 {
 
 	wp_enqueue_style('bootstrap-style', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css', array(), '5.3.3', 'all');
-	wp_enqueue_style('main-style', get_template_directory_uri() . '/assets/css/main.css', array(), '1.1', 'all');
 
 	if (is_front_page()) {
 		wp_enqueue_style('home-style', get_template_directory_uri() . '/assets/css/home.css', array(), '1.1', 'all');
@@ -170,8 +169,20 @@ function enqueue_custom_styles()
 	}
 
 	if (is_page(71)) {
+		wp_enqueue_style('swiper-style', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', array(), '1.1', 'all');
 		wp_enqueue_style('rooms-style', get_template_directory_uri() . '/assets/css/rooms.css', array(), '1.1', 'all');
 	}
+
+	if (is_page(95)) {
+		wp_enqueue_style('offer-style', get_template_directory_uri() . '/assets/css/offers.css', array(), '1.1', 'all');
+	}
+
+	if (get_post_type() === 'offers'){
+		wp_enqueue_style('details-style', get_template_directory_uri() . '/assets/css/detailsoffers.css', array(), '1.1', 'all');
+	}
+
+	wp_enqueue_style('main-style', get_template_directory_uri() . '/assets/css/main.css', array(), '1.1', 'all');
+
 }
 
 add_action('wp_enqueue_scripts', 'enqueue_custom_styles');
@@ -195,7 +206,7 @@ function enqueue_custom_scripts()
 
 	if (is_page(71)) {
 		wp_enqueue_script('swiper-script', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array(), '1.1', 'all');
-		wp_enqueue_script('room-script', get_template_directory_uri() . '/assets/js/rooms.js', array(), '1.1', 'all');
+		wp_enqueue_script('room-script', get_template_directory_uri() . '/assets/js/rooms.js', array(), '1.2', 'all');
 	}
 }
 
@@ -227,3 +238,75 @@ require get_template_directory() . '/inc/customizer.php';
 if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
+
+
+/*
+* Creating a function to create our CPT
+*/
+  
+function offers_post_type() {
+  
+	// Set UI labels for Custom Post Type
+		$labels = array(
+			'name'                => _x( 'Offers', 'Post Type General Name', 'twentytwentyone' ),
+			'singular_name'       => _x( 'Offer', 'Post Type Singular Name', 'twentytwentyone' ),
+			'menu_name'           => __( 'Offers', 'twentytwentyone' ),
+			'parent_item_colon'   => __( 'Parent Offer', 'twentytwentyone' ),
+			'all_items'           => __( 'All Offers', 'twentytwentyone' ),
+			'view_item'           => __( 'View Offer', 'twentytwentyone' ),
+			'add_new_item'        => __( 'Add New Offer', 'twentytwentyone' ),
+			'add_new'             => __( 'Add New', 'twentytwentyone' ),
+			'edit_item'           => __( 'Edit Offer', 'twentytwentyone' ),
+			'update_item'         => __( 'Update Offer', 'twentytwentyone' ),
+			'search_items'        => __( 'Search Offer', 'twentytwentyone' ),
+			'not_found'           => __( 'Not Found', 'twentytwentyone' ),
+			'not_found_in_trash'  => __( 'Not found in Trash', 'twentytwentyone' ),
+		);
+		  
+	// Set other options for Custom Post Type
+		  
+		$args = array(
+			'label'               => __( 'offers', 'twentytwentyone' ),
+			'description'         => __( 'Offer news and reviews', 'twentytwentyone' ),
+			'labels'              => $labels,
+			// Features this CPT supports in Post Editor
+			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+			// You can associate this CPT with a taxonomy or custom taxonomy. 
+			'taxonomies'          => array( 'genres' ),
+			/* A hierarchical CPT is like Pages and can have
+			* Parent and child items. A non-hierarchical CPT
+			* is like Posts.
+			*/
+			'hierarchical'        => false,
+			'public'              => true,
+			'show_ui'             => true,
+			'show_in_menu'        => true,
+			'show_in_nav_menus'   => true,
+			'show_in_admin_bar'   => true,
+			'menu_position'       => 5,
+			'can_export'          => true,
+			'has_archive'         => true,
+			'exclude_from_search' => false,
+			'publicly_queryable'  => true,
+			'capability_type'     => 'post',
+			'show_in_rest' => true,
+	  
+		);
+		  
+		// Registering your Custom Post Type
+		register_post_type('offers', array(
+			'public' => true,
+			'has_archive' => true,
+			'supports' => array('title', 'editor', 'thumbnail')
+		));
+	  
+	}
+	  
+	/* Hook into the 'init' action so that the function
+	* Containing our post type registration is not 
+	* unnecessarily executed. 
+	*/
+	  
+	add_action( 'init', 'offers_post_type', 0 );
