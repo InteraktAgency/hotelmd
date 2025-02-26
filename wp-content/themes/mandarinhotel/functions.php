@@ -185,6 +185,10 @@ function enqueue_custom_styles()
 		wp_enqueue_style('job-style', get_template_directory_uri() . '/assets/css/jobs.css', array(), '1.1', 'all');
 	}
 
+	if (is_page(110)) {
+		wp_enqueue_style('contact-style', get_template_directory_uri() . '/assets/css/contact.css', array(), '1.1', 'all');
+	}
+
 	wp_enqueue_style('main-style', get_template_directory_uri() . '/assets/css/main.css', array(), '1.1', 'all');
 
 }
