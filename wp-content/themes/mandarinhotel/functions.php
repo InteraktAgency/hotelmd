@@ -1,5 +1,7 @@
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+
 /**
  * Mandarinhotel functions and definitions
  *
@@ -215,6 +217,22 @@ function enqueue_custom_scripts()
 	if (is_page(71)) {
 		wp_enqueue_script('swiper-script', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array(), '1.1', 'all');
 		wp_enqueue_script('room-script', get_template_directory_uri() . '/assets/js/rooms.js', array(), '1.2', 'all');
+	}	
+	if (is_page(107)) {
+        wp_enqueue_script('swal-alert', 'https://cdn.jsdelivr.net/npm/sweetalert2@11', array(), '1.1', 'all');
+        wp_enqueue_script( 'job-script',get_template_directory_uri() . '/assets/js/job.js', array(), '1.2', 'all');
+		wp_localize_script('job-script', 'ajax_object', array(
+			'ajaxurl' => admin_url('admin-ajax.php'),
+			'security' => wp_create_nonce('job_form_nonce') // Add nonce
+		));
+	}
+    if (is_page(109)) {
+        wp_enqueue_script('swal-alert', 'https://cdn.jsdelivr.net/npm/sweetalert2@11', array(), '1.1', 'all');
+        wp_enqueue_script( 'contact-script',get_template_directory_uri() . '/assets/js/contact.js', array(), '1.2', 'all');
+		wp_localize_script('contact-script', 'ajax_object', array(
+			'ajaxurl' => admin_url('admin-ajax.php'),
+			'security' => wp_create_nonce('contact_form_nonce') // Add nonce
+		));
 	}
 }
 
@@ -311,7 +329,121 @@ function offers_post_type() {
 		));
 	  
 	}
-	  
+function handle_job_form_submission() {
+    check_ajax_referer('job_form_nonce', 'security');
+
+    $data = [
+        'name'    => sanitize_text_field($_POST['name']),
+        'email'   => sanitize_email($_POST['email']),
+        'phone'   => sanitize_text_field($_POST['phone']),
+        'post'    => sanitize_text_field($_POST['post']),
+        'message' => sanitize_textarea_field($_POST['message'])
+    ];
+
+    $cv = $_FILES['cv'];
+    $upload_dir = wp_upload_dir();
+    $file_path = $upload_dir['path'] . '/' . basename($cv['name']);
+
+    if (move_uploaded_file($cv['tmp_name'], $file_path)) {
+        $to = 'careers@mandarinhotel.com';
+        $subject = "New Application for {$data['post']}";
+        $headers = [
+            'Content-Type: text/html; charset=UTF-8',
+            'From: ' . $data['name'] . ' <' . $data['email'] . '>'
+        ];
+
+        $body = "<h2>New Job Application</h2>
+            <p><strong>Name:</strong> {$data['name']}</p>
+            <p><strong>Email:</strong> {$data['email']}</p>
+            <p><strong>Phone:</strong> {$data['phone']}</p>
+            <p><strong>Position:</strong> {$data['post']}</p>
+            <p><strong>Message:</strong><br>{$data['message']}</p>
+            <p>CV attached: <a href='" . esc_url($upload_dir['url'] . '/' . basename($file_path)) . "'>" . basename($file_path) ."</a></p>";
+
+        add_filter('wp_mail_content_type', function() { return 'text/html'; });
+        $sent = wp_mail($to, $subject, $body, $headers, [$file_path]);
+        remove_filter('wp_mail_content_type', 'set_html_content_type');
+
+        if ($sent) {
+            wp_send_json_success('Your application has been submitted successfully!');
+        } else {
+            wp_send_json_error('Failed to send application. Please try again.');
+        }
+    } else {
+        wp_send_json_error('Error uploading CV file.');
+    }
+}
+
+
+add_action('wp_ajax_handle_job_form', 'handle_job_form_submission');
+add_action('wp_ajax_nopriv_handle_job_form', 'handle_job_form_submission');
+function handle_contact_form_submission() {
+    // Verify nonce for security
+    if (!isset($_POST['security']) || !wp_verify_nonce($_POST['security'], 'contact_form_nonce')) {
+        wp_send_json_error('Invalid nonce');
+        return;
+    }
+
+    // Sanitize form data
+    $subject = sanitize_text_field($_POST['subject']);
+    $name = sanitize_text_field($_POST['name']);
+    $email = sanitize_email($_POST['email']);
+    $message = sanitize_textarea_field($_POST['message']);
+
+    // Basic validation
+    if (empty($subject) || empty($name) || empty($email)) {
+        wp_send_json_error('All fields are required.');
+        return;
+    }
+
+    // Prepare email
+    $to = 'your-email@example.com';  // Change this to your email address
+    $headers = [
+        'Content-Type: text/html; charset=UTF-8',
+        'From: ' . $name . ' <' . $email . '>',
+    ];
+    $email_body = "<h2>New Message from Contact Form</h2>
+        <p><strong>Subject:</strong> $subject</p>
+        <p><strong>Name:</strong> $name</p>
+        <p><strong>Email:</strong> $email</p>
+        <p><strong>Message:</strong><br>$message</p>";
+
+    // Send email
+    $mail_sent = wp_mail($to, $subject, $email_body, $headers);
+
+    if ($mail_sent) {
+        wp_send_json_success('Your message has been sent successfully!');
+    } else {
+        wp_send_json_error('Failed to send your message.');
+    }
+}
+
+// Hook into WordPress AJAX
+add_action('wp_ajax_send_contact_form', 'handle_contact_form_submission');
+add_action('wp_ajax_nopriv_send_contact_form', 'handle_contact_form_submission');
+
+// 1. Rename the function to match the hook
+// Looking to send emails in production? Check out our Email API/SMTP product!
+// In functions.php
+add_action('phpmailer_init', 'custom_mailtrap_smtp'); // Fixed function name
+
+function custom_mailtrap_smtp(PHPMailer $phpmailer) {
+    $phpmailer->isSMTP();
+    $phpmailer->Host       = SMTP_HOST;
+    $phpmailer->SMTPAuth   = true;
+    $phpmailer->Port       = SMTP_PORT;
+    $phpmailer->Username   = SMTP_USER;
+    $phpmailer->Password   = SMTP_PASS;
+    $phpmailer->SMTPSecure = SMTP_SECURE;
+    $phpmailer->From       = SMTP_FROM;
+    $phpmailer->FromName   = SMTP_FROM_NAME;
+}
+
+
+// Looking to send emails in production? Check out our Email API/SMTP product!
+
+
+
 	/* Hook into the 'init' action so that the function
 	* Containing our post type registration is not 
 	* unnecessarily executed. 

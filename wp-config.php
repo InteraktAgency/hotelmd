@@ -85,7 +85,11 @@ $table_prefix = 'md_';
  *
  * @link https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
  */
-define( 'WP_DEBUG', false );
+define( 'WP_DEBUG', true );
+
+define('WP_DEBUG_LOG', true);
+define('WP_DEBUG_DISPLAY', false);
+@ini_set('display_errors', 0);
 
 /* Add any custom values between this line and the "stop editing" line. */
 
@@ -100,3 +104,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+// Looking to send emails in production? Check out our Email API/SMTP product!
+
+  
+define('SMTP_HOST', 'smtp.mailtrap.io');
+define('SMTP_PORT', 2525);
+define('SMTP_USER', 'e6c7b698497f2e');
+define('SMTP_PASS', 'cf3ea6cddbf1a5');
+define('SMTP_FROM', 'test@example.com');
+define('SMTP_FROM_NAME', 'Mandarin Hotel');
+define('SMTP_SECURE', 'tls');
+
