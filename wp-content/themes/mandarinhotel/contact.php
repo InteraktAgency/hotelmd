@@ -38,7 +38,7 @@ get_header();
             <form id="contactForm" novalidate>
                 <div class="row gap-4">
                     <div class="col-md-5">
-                <textarea class="textarea-message" placeholder="Votre message..."></textarea>
+                <textarea class="textarea-message" placeholder="Votre message..." name="message"></textarea>
                     </div>
                     <div class="col-md-5">
 
