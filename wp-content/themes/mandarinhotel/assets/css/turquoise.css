@@ -1,0 +1,102 @@
+.custom-header {
+    position: unset;
+    height: unset;
+}
+
+.custom-header .navbar-custom {
+    background: black;
+}
+
+.content-img-header img {
+    width: 100%;
+}
+
+.hero-section-turquoise iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-section-turquoise {
+    margin: 50px 0 89px 0;
+}
+
+.content-desc-turquoise {
+    margin-top: 29px;
+}
+
+.content-desc-turquoise h2,
+.turquoise-beach-section h1,
+.container-intro h2 {
+    margin-bottom: 19px;
+    color: #141617;
+    font-size: 24px;
+    letter-spacing: -0.42px;
+    text-transform: uppercase;
+}
+
+.container-intro h2 {
+    font-weight: 400;
+}
+
+.turquoise-beach-section h1 {
+    margin-bottom: 23px;
+    text-align: center;
+    font-size: 42px;
+}
+
+.turquoise-beach-section {
+    margin-bottom: 42px;
+}
+
+
+.desc-turquoise {
+    margin-bottom: 62px;
+}
+
+.desc-turquoise p,
+.desc-turquoise {
+    color: #141617;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.24px;
+}
+
+.turquoise-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 0 20px;
+    gap: 8px;
+    margin-bottom: 132px;
+}
+
+.turquoise-gallery img {
+    width: 100%;
+    height: 337px;
+    object-fit: cover;
+}
+
+.container-intro {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.padding-rl{
+    align-items: center !important;
+    padding: 0 20px !important;
+}
+
+.space-tp{
+    margin-top: 70px;
+}
+
+.content-img img{
+    width: 100%;
+}
+
+.hero-section-turquoise{
+    margin-top:11%;
+}

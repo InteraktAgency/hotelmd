@@ -1,0 +1,231 @@
+.custom-header {
+    position: unset;
+    height: unset;
+}
+
+.custom-header .navbar-custom {
+    background: black;
+}
+
+.content-img-header img {
+    width: 100%;
+}
+
+.content-book-now {
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    padding: 20px 0;
+}
+
+.btn-book,
+.btn-restaurant,
+.btn-gallery {
+    padding: 7px 49px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.nav-item.active {
+    background-color: #000;
+}
+
+.nav-tabs .nav-link:hover {
+    border: unset;
+}
+
+.nav-item.active a {
+    color: #ffffff;
+}
+
+.btn:hover {
+    color: unset;
+    background-color: unset;
+    border-color: unset;
+}
+
+.btn-book:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.btn-restaurant,
+.btn-gallery {
+    width: 100%;
+}
+
+.btn-cart:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.nav-tabs .nav-link:hover {
+    border: 1px solid #000000;
+}
+
+
+
+.content-book-now h2,
+.restaurant-intro-section .container-intro h2 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.42px;
+    text-transform: uppercase;
+}
+
+.container-intro {
+    margin-top: 95px;
+    margin-left: 20px;
+}
+
+.restaurant-intro-section .container-intro h2 {
+    margin-bottom: 35px;
+}
+
+
+.restaurant-intro-section img {
+    width: 100%;
+}
+
+.container-info-p p,
+.container-info-p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn-cart {
+    border: 1px solid #000;
+    background-color: #FFF;
+    padding: 10px 70px;
+    border-radius: 0;
+    font-family: 'Poppins';
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+
+.list-services {
+    display: flex;
+    align-items: start;
+    gap: 0;
+}
+
+.list-services .item img {
+    width: 100%;
+    height: 335px;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.list-services .item .item-featured {
+    position: relative;
+    overflow: hidden;
+}
+
+.list-services .item h2 {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -0.6px;
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 20px;
+    z-index: 66;
+}
+
+.list-services .item-content {
+    padding: 30px 25px;
+    color: #141617;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.24px;
+    line-height: 27px;
+}
+
+.list-services .read-more {
+    padding: 0 25px;
+}
+
+
+.list-services .item-featured h2:after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    transition: .5s;
+}
+
+.list-services .item-featured:hover h2:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transition: .5s;
+}
+
+.list-services .item {
+    width: 100%;
+}
+
+.list-services .item-featured:hover a::after {
+    position: absolute;
+    content: '';
+    background-color: #14161742;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    transition: .5s;
+}
+
+.list-services .item-featured:hover img {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: unset;
+    border: 1px solid #000000;
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+}
+
+.nav-item.active .nav-link {
+    border: 1px solid #000000;
+}
+
+.btn-book {
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.nav {
+    padding-left: 11px;
+}
+
+.section-brasserie{
+    margin-top: 11%;
+}
+
+.gal-rest{
+    padding: 0 15px;
+}
