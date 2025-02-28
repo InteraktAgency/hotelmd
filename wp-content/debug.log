@@ -161,3 +161,264 @@ Stack trace:
 [27-Feb-2025 10:50:18 UTC] PHP Warning:  Undefined array key "message" in C:\xampp\htdocs\hotelmd\wp-content\themes\mandarinhotel\functions.php on line 391
 [27-Feb-2025 10:50:42 UTC] PHP Warning:  Undefined array key "message" in C:\xampp\htdocs\hotelmd\wp-content\themes\mandarinhotel\functions.php on line 391
 [27-Feb-2025 10:55:17 UTC] PHP Warning:  Undefined array key "message" in C:\xampp\htdocs\hotelmd\wp-content\themes\mandarinhotel\functions.php on line 391
+[27-Feb-2025 15:00:30 UTC] PHP Warning:  Array to string conversion in C:\laragon\www\hotelMd\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 877
+[27-Feb-2025 15:00:30 UTC] PHP Warning:  Array to string conversion in C:\laragon\www\hotelMd\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 893
+[27-Feb-2025 15:00:30 UTC] PHP Warning:  Array to string conversion in C:\laragon\www\hotelMd\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 877
+[27-Feb-2025 15:00:30 UTC] PHP Warning:  Array to string conversion in C:\laragon\www\hotelMd\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 893
+[27-Feb-2025 15:00:30 UTC] PHP Warning:  Array to string conversion in C:\laragon\www\hotelMd\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 877
+[27-Feb-2025 15:00:30 UTC] PHP Warning:  Array to string conversion in C:\laragon\www\hotelMd\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 893
+[27-Feb-2025 17:22:41 UTC] PHP Fatal error:  Uncaught Error: Class "Custom_Nav_Walker" not found in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\header.php:90
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-includes\template.php(810): require_once()
+#1 C:\laragon\www\hotelMd\wp-includes\template.php(745): load_template('C:\\laragon\\www\\...', true, Array)
+#2 C:\laragon\www\hotelMd\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\home-page.php(6): get_header()
+#4 C:\laragon\www\hotelMd\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\hotelMd\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\hotelMd\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\header.php on line 90
+[27-Feb-2025 17:22:58 UTC] PHP Fatal error:  Uncaught Error: Class "Custom_Nav_Walker" not found in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\header.php:90
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-includes\template.php(810): require_once()
+#1 C:\laragon\www\hotelMd\wp-includes\template.php(745): load_template('C:\\laragon\\www\\...', true, Array)
+#2 C:\laragon\www\hotelMd\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\home-page.php(6): get_header()
+#4 C:\laragon\www\hotelMd\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\hotelMd\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\hotelMd\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\header.php on line 90
+[27-Feb-2025 17:23:02 UTC] PHP Fatal error:  Uncaught Error: Class "Custom_Nav_Walker" not found in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\header.php:90
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-includes\template.php(810): require_once()
+#1 C:\laragon\www\hotelMd\wp-includes\template.php(745): load_template('C:\\laragon\\www\\...', true, Array)
+#2 C:\laragon\www\hotelMd\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\home-page.php(6): get_header()
+#4 C:\laragon\www\hotelMd\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\hotelMd\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\hotelMd\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\header.php on line 90
+[27-Feb-2025 17:30:11 UTC] PHP Warning:  require(C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-wp-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 277
+[27-Feb-2025 17:30:11 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-wp-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php:277
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-settings.php(672): include()
+#1 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\hotelMd\wp-admin\admin-ajax.php(22): require_once('C:\\laragon\\www\\...')
+#4 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 277
+[27-Feb-2025 17:30:11 UTC] PHP Notice:  La fonction _load_textdomain_just_in_time a été appelée de façon <strong>incorrecte</strong>. Le chargement de la traduction pour le domaine <code>mandarinhotel</code> a été déclenché trop tôt. Cela indique généralement que du code dans l’extension ou le thème s’exécute trop tôt. Les traductions doivent être chargées au moment de l’action <code>init</code> ou plus tard. Veuillez lire <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 6.7.0.) in C:\laragon\www\hotelMd\wp-includes\functions.php on line 6114
+[27-Feb-2025 17:30:11 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\laragon\www\hotelMd\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[27-Feb-2025 17:30:11 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\laragon\www\hotelMd\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[27-Feb-2025 17:30:18 UTC] PHP Warning:  require(C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-wp-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 277
+[27-Feb-2025 17:30:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-wp-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php:277
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-settings.php(672): include()
+#1 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\hotelMd\wp-admin\admin-ajax.php(22): require_once('C:\\laragon\\www\\...')
+#4 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 277
+[27-Feb-2025 17:33:02 UTC] PHP Warning:  require_once(C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 277
+[27-Feb-2025 17:33:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php:277
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-settings.php(672): include()
+#1 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\hotelMd\wp-admin\admin-ajax.php(22): require_once('C:\\laragon\\www\\...')
+#4 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 277
+[27-Feb-2025 17:33:21 UTC] PHP Warning:  require_once(C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:33:21 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php:273
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-settings.php(672): include()
+#1 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\hotelMd\wp-admin\admin-ajax.php(22): require_once('C:\\laragon\\www\\...')
+#4 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:33:22 UTC] PHP Warning:  require_once(C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:33:22 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php:273
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-settings.php(672): include()
+#1 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\hotelMd\wp-admin\admin.php(34): require_once('C:\\laragon\\www\\...')
+#4 C:\laragon\www\hotelMd\wp-admin\nav-menus.php(13): require_once('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:33:24 UTC] PHP Warning:  require_once(C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:33:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php:273
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-settings.php(672): include()
+#1 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\hotelMd\wp-blog-header.php(13): require_once('C:\\laragon\\www\\...')
+#4 C:\laragon\www\hotelMd\index.php(17): require('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:33:25 UTC] PHP Warning:  require_once(C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:33:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php:273
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-settings.php(672): include()
+#1 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\hotelMd\wp-blog-header.php(13): require_once('C:\\laragon\\www\\...')
+#4 C:\laragon\www\hotelMd\index.php(17): require('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:33:26 UTC] PHP Warning:  require_once(C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:33:26 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php:273
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-settings.php(672): include()
+#1 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\hotelMd\wp-blog-header.php(13): require_once('C:\\laragon\\www\\...')
+#4 C:\laragon\www\hotelMd\index.php(17): require('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:33:35 UTC] PHP Warning:  require_once(C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:33:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php:273
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-settings.php(672): include()
+#1 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\hotelMd\wp-admin\admin-ajax.php(22): require_once('C:\\laragon\\www\\...')
+#4 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:33:51 UTC] PHP Warning:  require_once(C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:33:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php:273
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-settings.php(672): include()
+#1 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\hotelMd\wp-admin\admin-ajax.php(22): require_once('C:\\laragon\\www\\...')
+#4 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:33:52 UTC] PHP Warning:  require_once(C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:33:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php:273
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-settings.php(672): include()
+#1 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\hotelMd\wp-blog-header.php(13): require_once('C:\\laragon\\www\\...')
+#4 C:\laragon\www\hotelMd\index.php(17): require('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:33:53 UTC] PHP Warning:  require_once(C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:33:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php:273
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-settings.php(672): include()
+#1 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\hotelMd\wp-blog-header.php(13): require_once('C:\\laragon\\www\\...')
+#4 C:\laragon\www\hotelMd\index.php(17): require('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:33:59 UTC] PHP Warning:  require_once(C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:33:59 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php:273
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-settings.php(672): include()
+#1 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\hotelMd\wp-blog-header.php(13): require_once('C:\\laragon\\www\\...')
+#4 C:\laragon\www\hotelMd\index.php(17): require('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:34:01 UTC] PHP Warning:  require_once(C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:34:01 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php:273
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-settings.php(672): include()
+#1 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\hotelMd\wp-blog-header.php(13): require_once('C:\\laragon\\www\\...')
+#4 C:\laragon\www\hotelMd\index.php(17): require('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:34:02 UTC] PHP Warning:  require_once(C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:34:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php:273
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-settings.php(672): include()
+#1 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\hotelMd\wp-admin\admin-ajax.php(22): require_once('C:\\laragon\\www\\...')
+#4 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 273
+[27-Feb-2025 17:34:18 UTC] PHP Warning:  require_once(C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 278
+[27-Feb-2025 17:34:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php:278
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-settings.php(672): include()
+#1 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\hotelMd\wp-blog-header.php(13): require_once('C:\\laragon\\www\\...')
+#4 C:\laragon\www\hotelMd\index.php(17): require('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 278
+[27-Feb-2025 17:34:20 UTC] PHP Warning:  require_once(C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 278
+[27-Feb-2025 17:34:20 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php:278
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-settings.php(672): include()
+#1 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\hotelMd\wp-blog-header.php(13): require_once('C:\\laragon\\www\\...')
+#4 C:\laragon\www\hotelMd\index.php(17): require('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 278
+[27-Feb-2025 17:34:42 UTC] PHP Warning:  require(C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 278
+[27-Feb-2025 17:34:42 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php:278
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-settings.php(672): include()
+#1 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\hotelMd\wp-blog-header.php(13): require_once('C:\\laragon\\www\\...')
+#4 C:\laragon\www\hotelMd\index.php(17): require('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 278
+[27-Feb-2025 17:34:43 UTC] PHP Warning:  require(C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 278
+[27-Feb-2025 17:34:43 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd/wp-content/themes/mandarinhotel/inc/class-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php:278
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-settings.php(672): include()
+#1 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\hotelMd\wp-blog-header.php(13): require_once('C:\\laragon\\www\\...')
+#4 C:\laragon\www\hotelMd\index.php(17): require('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 278
+[27-Feb-2025 17:34:48 UTC] PHP Fatal error:  Uncaught Error: Class "Custom_Nav_Walker" not found in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\header.php:90
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-includes\template.php(810): require_once()
+#1 C:\laragon\www\hotelMd\wp-includes\template.php(745): load_template('C:\\laragon\\www\\...', true, Array)
+#2 C:\laragon\www\hotelMd\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\home-page.php(6): get_header()
+#4 C:\laragon\www\hotelMd\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\hotelMd\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\hotelMd\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\header.php on line 90
+[28-Feb-2025 09:35:16 UTC] Automatic updates starting...
+[28-Feb-2025 09:35:17 UTC]   Automatic plugin updates starting...
+[28-Feb-2025 09:35:17 UTC]   Automatic plugin updates complete.
+[28-Feb-2025 09:35:17 UTC]   Automatic theme updates starting...
+[28-Feb-2025 09:35:18 UTC]   Automatic theme updates complete.
+[28-Feb-2025 09:35:18 UTC] Automatic updates complete.
+[28-Feb-2025 10:00:38 UTC] Erreur d’événement de replanification de tâche pour le crochet action_scheduler_run_queue. Code d’erreur : invalid_schedule. Message d’erreur : L’évènement planifié n’existe pas.. Données : {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[28-Feb-2025 10:43:27 UTC] TFA: Beginning attempt to port private key encryption over to openssl
+[28-Feb-2025 10:54:15 UTC] PHP Deprecated:  str_contains(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\laragon\www\hotelMd\wp-includes\shortcodes.php on line 246
+[28-Feb-2025 10:54:15 UTC] PHP Deprecated:  str_contains(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\laragon\www\hotelMd\wp-includes\shortcodes.php on line 246
+[28-Feb-2025 10:56:46 UTC] PHP Deprecated:  str_contains(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\laragon\www\hotelMd\wp-includes\shortcodes.php on line 246
+[28-Feb-2025 10:56:46 UTC] PHP Deprecated:  str_contains(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\laragon\www\hotelMd\wp-includes\shortcodes.php on line 246
+[28-Feb-2025 10:57:01 UTC] PHP Deprecated:  str_contains(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\laragon\www\hotelMd\wp-includes\shortcodes.php on line 246
+[28-Feb-2025 10:57:01 UTC] PHP Deprecated:  str_contains(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\laragon\www\hotelMd\wp-includes\shortcodes.php on line 246
+[28-Feb-2025 10:57:47 UTC] PHP Deprecated:  str_contains(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\laragon\www\hotelMd\wp-includes\shortcodes.php on line 246
+[28-Feb-2025 10:58:31 UTC] PHP Deprecated:  str_contains(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\laragon\www\hotelMd\wp-includes\shortcodes.php on line 246
+[28-Feb-2025 10:59:10 UTC] PHP Deprecated:  str_contains(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\laragon\www\hotelMd\wp-includes\shortcodes.php on line 246
+[28-Feb-2025 11:43:07 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 472
+[28-Feb-2025 11:43:07 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 472
+[28-Feb-2025 11:43:09 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 472
+[28-Feb-2025 11:43:12 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 472
+[28-Feb-2025 11:43:28 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 472
+[28-Feb-2025 11:43:30 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 472
+[28-Feb-2025 11:43:46 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 472
+[28-Feb-2025 11:43:48 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\functions.php on line 472

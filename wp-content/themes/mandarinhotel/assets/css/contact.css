@@ -57,6 +57,10 @@
     box-shadow: none;
 }
 
+.contact-section textarea:focus-visible {
+    outline: none;
+}
+
 .contact-section button.btn {
     border-radius: 0;
     border: 1px solid #000;
@@ -68,3 +72,4 @@
     font-weight: 500;
     letter-spacing: 0.24px;
 }
+

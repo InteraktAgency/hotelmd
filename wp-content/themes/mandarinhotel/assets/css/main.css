@@ -285,3 +285,77 @@ header {
     height: auto;
     object-fit: cover;
 }
+
+.page-id-140 .navbar-custom, .page-id-71 .navbar-custom, .page-id-55 .navbar-custom, .page-id-107 .navbar-custom, .page-id-114 .navbar-custom, .page-id-58 .navbar-custom{
+    background-color: #000;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #DC9171;
+}
+
+footer #menu-header-1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+footer #menu-header-1 li{
+    margin-bottom: 10px;
+}
+
+.newsletter{
+    margin-top: 50px;
+}
+
+.newsletter .content h2{
+    color: #141617;
+    font-family: "Palatino Linotype";
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.42px;
+    margin-bottom: 20px;
+}
+
+.newsletter .content .description{
+    color: #141617;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.24px;
+}
+
+.newsletter form input{
+    width: 100%;
+    background: white;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 15px 10px;
+}
+
+.newsletter .form-inline{
+    display: flex;
+    align-items: center;
+}
+
+.newsletter .form-inline button{
+    border: 1px solid #000;
+    background: #FFF;
+    padding: 10px 20px;
+    font-family: Poppins;
+    font-size: 16px;
+    color: #000;
+}
+
+.newsletter input:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px !important;
+}
+
+.newsletter .row{
+    align-items: center;
+}
+
+.newsletter-heading{
+    margin-top: 11%;
+}

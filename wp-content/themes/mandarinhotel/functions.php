@@ -51,11 +51,16 @@ function mandarinhotel_setup()
 	add_theme_support('post-thumbnails');
 
 	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus(
-		array(
-			'menu-1' => esc_html__('Primary', 'mandarinhotel'),
-		)
-	);
+	function register_my_menus() {
+		register_nav_menus(
+			array(
+				'primary-menu' => __( 'Primary Menu' ),
+				'footer-menu' => __( 'Footer Menu' )
+			)
+		);
+	}
+	add_action( 'init', 'register_my_menus' );
+	
 
 	/*
 		* Switch default core markup for search form, comment form, and comments
@@ -191,6 +196,16 @@ function enqueue_custom_styles()
 		wp_enqueue_style('contact-style', get_template_directory_uri() . '/assets/css/contact.css', array(), '1.1', 'all');
 	}
 
+	if (is_page(114)) {
+		wp_enqueue_style('turqouise-style', get_template_directory_uri() . '/assets/css/turquoise.css', array(), '1.1', 'all');
+	}
+
+	if (is_page(140)) {
+		wp_enqueue_style('restaurant-style', get_template_directory_uri() . '/assets/css/restaurant.css', array(), '1.1', 'all');
+	}
+
+	
+
 	wp_enqueue_style('main-style', get_template_directory_uri() . '/assets/css/main.css', array(), '1.1', 'all');
 
 }
@@ -226,7 +241,7 @@ function enqueue_custom_scripts()
 			'security' => wp_create_nonce('job_form_nonce') // Add nonce
 		));
 	}
-    if (is_page(109)) {
+    if (is_page(110)) {
         wp_enqueue_script('swal-alert', 'https://cdn.jsdelivr.net/npm/sweetalert2@11', array(), '1.1', 'all');
         wp_enqueue_script( 'contact-script',get_template_directory_uri() . '/assets/js/contact.js', array(), '1.2', 'all');
 		wp_localize_script('contact-script', 'ajax_object', array(
@@ -265,9 +280,7 @@ if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-
-
-
+ 
 /*
 * Creating a function to create our CPT
 */
@@ -345,7 +358,7 @@ function handle_job_form_submission() {
     $file_path = $upload_dir['path'] . '/' . basename($cv['name']);
 
     if (move_uploaded_file($cv['tmp_name'], $file_path)) {
-        $to = 'careers@mandarinhotel.com';
+        $to = 'youssef@interaktagency.com';
         $subject = "New Application for {$data['post']}";
         $headers = [
             'Content-Type: text/html; charset=UTF-8',
@@ -397,7 +410,7 @@ function handle_contact_form_submission() {
     }
 
     // Prepare email
-    $to = 'your-email@example.com';  // Change this to your email address
+    $to = 'youssef@interaktagency.com'; 
     $headers = [
         'Content-Type: text/html; charset=UTF-8',
         'From: ' . $name . ' <' . $email . '>',
@@ -450,3 +463,86 @@ function custom_mailtrap_smtp(PHPMailer $phpmailer) {
 	*/
 	  
 	add_action( 'init', 'offers_post_type', 0 );
+
+
+
+
+	// Navwalker bootstrap 5
+	
+	class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
+	{
+	  private $current_item;
+	  private $dropdown_menu_alignment_values = [
+		'dropdown-menu-start',
+		'dropdown-menu-end',
+		'dropdown-menu-sm-start',
+		'dropdown-menu-sm-end',
+		'dropdown-menu-md-start',
+		'dropdown-menu-md-end',
+		'dropdown-menu-lg-start',
+		'dropdown-menu-lg-end',
+		'dropdown-menu-xl-start',
+		'dropdown-menu-xl-end',
+		'dropdown-menu-xxl-start',
+		'dropdown-menu-xxl-end'
+	  ];
+	
+	  function start_lvl(&$output, $depth = 0, $args = null)
+	  {
+		$dropdown_menu_class[] = '';
+		foreach($this->current_item->classes as $class) {
+		  if(in_array($class, $this->dropdown_menu_alignment_values)) {
+			$dropdown_menu_class[] = $class;
+		  }
+		}
+		$indent = str_repeat("\t", $depth);
+		$submenu = ($depth > 0) ? ' sub-menu' : '';
+		$output .= "\n$indent<ul class=\"dropdown-menu$submenu " . esc_attr(implode(" ",$dropdown_menu_class)) . " depth_$depth\">\n";
+	  }
+	
+	  function start_el(&$output, $item, $depth = 0, $args = null, $id = 0)
+	  {
+		$this->current_item = $item;
+	
+		$indent = ($depth) ? str_repeat("\t", $depth) : '';
+	
+		$li_attributes = '';
+		$class_names = $value = '';
+	
+		$classes = empty($item->classes) ? array() : (array) $item->classes;
+	
+		$classes[] = ($args->walker->has_children) ? 'dropdown' : '';
+		$classes[] = 'nav-item';
+		$classes[] = 'nav-item-' . $item->ID;
+		if ($depth && $args->walker->has_children) {
+		  $classes[] = 'dropdown-menu dropdown-menu-end';
+		}
+	
+		$class_names =  join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args));
+		$class_names = ' class="' . esc_attr($class_names) . '"';
+	
+		$id = apply_filters('nav_menu_item_id', 'menu-item-' . $item->ID, $item, $args);
+		$id = strlen($id) ? ' id="' . esc_attr($id) . '"' : '';
+	
+		$output .= $indent . '<li ' . $id . $value . $class_names . $li_attributes . '>';
+	
+		$attributes = !empty($item->attr_title) ? ' title="' . esc_attr($item->attr_title) . '"' : '';
+		$attributes .= !empty($item->target) ? ' target="' . esc_attr($item->target) . '"' : '';
+		$attributes .= !empty($item->xfn) ? ' rel="' . esc_attr($item->xfn) . '"' : '';
+		$attributes .= !empty($item->url) ? ' href="' . esc_attr($item->url) . '"' : '';
+	
+		$active_class = ($item->current || $item->current_item_ancestor || in_array("current_page_parent", $item->classes, true) || in_array("current-post-ancestor", $item->classes, true)) ? 'active' : '';
+		$nav_link_class = ( $depth > 0 ) ? 'dropdown-item ' : 'nav-link ';
+		$attributes .= ( $args->walker->has_children ) ? ' class="'. $nav_link_class . $active_class . ' dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"' : ' class="'. $nav_link_class . $active_class . '"';
+	
+		$item_output = $args->before;
+		$item_output .= '<a' . $attributes . '>';
+		$item_output .= $args->link_before . apply_filters('the_title', $item->title, $item->ID) . $args->link_after;
+		$item_output .= '</a>';
+		$item_output .= $args->after;
+	
+		$output .= apply_filters('walker_nav_menu_start_el', $item_output, $item, $depth, $args);
+	  }
+	}
+	// register a new menu
+	register_nav_menu('main-menu', 'Main menu');

@@ -2,7 +2,6 @@ jQuery(document).ready(function($) {
     $("#jobForm").submit(function(event) {
         event.preventDefault();
 
-        // Réinitialisation des messages d'erreur
         $(".error-msg").text("");
 
         let name = $("#name").val()?.trim();
@@ -16,7 +15,6 @@ jQuery(document).ready(function($) {
             isValid = false;
         }
 
-        // Validation du champ "Email"
         if (email === "") {
             $("#error-email").text("L'email est obligatoire");
             isValid = false;
@@ -25,7 +23,6 @@ jQuery(document).ready(function($) {
             isValid = false;
         }
 
-        // Validation du champ "Téléphone" (facultatif mais doit être valide s'il est rempli)
         if ($("#phone").length && phone !== "") {
             if (!/^\d{10}$/.test(phone)) {
                 $("#error-phone").text("Le numéro de téléphone doit contenir 10 chiffres.");
@@ -33,7 +30,6 @@ jQuery(document).ready(function($) {
             }
         }
 
-        // Validation du champ "CV" (obligatoire)
         if ($("#cv").length && cv === "") {
             $("#error-cv").text("Veuillez télécharger votre CV.");
             isValid = false;
@@ -45,13 +41,11 @@ jQuery(document).ready(function($) {
             }
         }
 
-        // If validation is successful
         if (isValid) {
 
 
                 var formData = new FormData(this);
 
-                // Add these BEFORE the AJAX call
                 formData.append('action', 'handle_job_form');
                 formData.append('security', ajax_object.security);
 

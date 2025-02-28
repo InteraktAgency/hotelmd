@@ -1,0 +1,38 @@
+28-02-2025 15:22:15 - INFO  - 8.7.1 - 54,8 Mo/800 Mo - admin > Start upgrade from 0.0.0
+28-02-2025 15:22:15 - INFO  - 8.7.1 - 55,1 Mo/800 Mo - admin > Array
+(
+    [`md_newsletter_emails`] => Created table `md_newsletter_emails`
+)
+
+28-02-2025 15:22:16 - INFO  - 8.7.1 - 55,1 Mo/800 Mo - admin > Array
+(
+    [`md_newsletter_sent`] => Created table `md_newsletter_sent`
+)
+
+28-02-2025 15:22:16 - INFO  - 8.7.1 - 55,2 Mo/800 Mo - admin > Array
+(
+    [`md_newsletter`] => Created table `md_newsletter`
+)
+
+28-02-2025 15:22:16 - INFO  - 8.7.1 - 55,1 Mo/800 Mo - admin > Array
+(
+    [`md_newsletter_user_logs`] => Created table `md_newsletter_user_logs`
+)
+
+28-02-2025 15:22:16 - INFO  - 8.7.1 - 55,1 Mo/800 Mo - admin > Array
+(
+    [`md_newsletter_user_meta`] => Created table `md_newsletter_user_meta`
+)
+
+28-02-2025 15:22:16 - INFO  - 8.7.1 - 55,1 Mo/800 Mo - admin > Array
+(
+    [`md_newsletter_stats`] => Created table `md_newsletter_stats`
+)
+
+28-02-2025 15:22:16 - INFO  - 8.7.1 - 55,1 Mo/800 Mo - admin > Array
+(
+    [`md_newsletter_logs`] => Created table `md_newsletter_logs`
+)
+
+28-02-2025 15:22:16 - INFO  - 8.7.1 - 55,2 Mo/800 Mo - admin > Backing up options of 0.0.0
+28-02-2025 15:22:16 - INFO  - 8.7.1 - 55,2 Mo/800 Mo - admin > End

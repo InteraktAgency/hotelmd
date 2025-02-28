@@ -46,36 +46,20 @@
 
 				<!-- Menu -->
 				<div class="collapse navbar-collapse" id="navbarNav">
+					
 					<ul class="navbar-nav ms-auto d-flex gap-2">
-						<li class="nav-item">
-							<a class="nav-link" href="#">Hebergement</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Night Lounge</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Restaurants</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Experience</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Conciergerie</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Booking</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Jobs</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contact</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">
-								<img class="flag-icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/logoLanguege.svg" alt="Langue">
-							</a>
-						</li>
+ 
+						<?php
+							wp_nav_menu(array(
+								'theme_location' => 'main-menu',
+								'container' => false,
+								'menu_class' => '',
+								'fallback_cb' => '__return_false',
+								'items_wrap' => '<ul id="%1$s" class="navbar-nav me-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
+								'depth' => 2,
+								'walker' => new bootstrap_5_wp_nav_menu_walker()
+							));
+						?>
 					</ul>
 				</div>
 		</nav>

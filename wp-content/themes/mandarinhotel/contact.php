@@ -7,7 +7,7 @@ get_header();
 ?>
 
 <section class="hero-section">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner-contact.jpg" alt="banner">
+    <img src="<?php echo the_field('banner') ?>" alt="banner">
 </section>
 
 <section class="contactus-heading">
@@ -32,16 +32,12 @@ get_header();
 </section>
 <section class="contact-section">
     <div class="container">
-
-
-
-            <form id="contactForm" novalidate>
-                <div class="row gap-4">
-                    <div class="col-md-5">
-                <textarea class="textarea-message" placeholder="Votre message..." name="message"></textarea>
-                    </div>
-                    <div class="col-md-5">
-
+        <form id="contactForms" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-md-6">
+                    <textarea class="textarea-message" placeholder="Votre message..." name="message"></textarea>
+                </div>
+                <div class="col-md-6">
                     <div class="mb-3">
                         <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject" />
                         <div id="error-subject" class="error-msg text-danger"></div>
@@ -51,7 +47,7 @@ get_header();
                         <div id="error-name" class="error-msg text-danger"></div>
                     </div>
                     <div class="mb-3">
-                        <input type="email" class="form-control" id="email" placeholder="Email" name="email"/>
+                        <input type="email" class="form-control" id="email" placeholder="Email" name="email" />
                         <div id="error-email" class="error-msg text-danger"></div>
                     </div>
 
@@ -59,9 +55,9 @@ get_header();
                     <button type="submit" class="btn">
                         Envoyer
                     </button>
-                    </div>
                 </div>
-                </form>
+            </div>
+        </form>
 
     </div>
 </section>
