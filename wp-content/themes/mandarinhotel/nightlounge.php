@@ -30,7 +30,7 @@ get_header();
         <div class="row g-0">
             <div class="col-md-6">
                 <div class="item">
-                    <a href="#">
+                    <a href="<?php the_permalink(114); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/turquoise.jpg" alt="Turquoise">
                     </a>
                 </div>

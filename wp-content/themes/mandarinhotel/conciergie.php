@@ -30,7 +30,7 @@ get_header();
             <div class="col-md-4">
                 <div class="item">
                     <div class="item-featured">
-                        <a href="#">
+                        <a href="<?php the_permalink(58) ?>">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/event.jpg" alt="Image 1">
                             <h2>Organisation des événements</h2>
                         </a>
