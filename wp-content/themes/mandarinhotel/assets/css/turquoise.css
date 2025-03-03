@@ -100,3 +100,46 @@
 .hero-section-turquoise{
     margin-top:11%;
 }
+
+
+@media(max-width:500px){
+    .hero-section-turquoise {
+        margin-top: 30%;
+    }
+    .padding-rl {
+        padding: 0 10px !important;
+    }
+
+    .content-desc-turquoise h2, .turquoise-beach-section h1, .container-intro h2 {
+        font-size: 25px;
+    }
+
+    .desc-turquoise p, .desc-turquoise {
+        font-size: 14px;
+    }
+
+    .desc-turquoise {
+        margin-bottom: 30px;
+    }
+
+    .turquoise-beach-section h1 {
+        font-size: 25px;
+    }
+
+    .turquoise-gallery {
+        padding: 0 10px;
+    }
+
+    .container-intro{
+        width: 100%;
+    }
+
+    .first-row-content{
+        order: 2;
+    }
+
+    .content-img {
+        margin-bottom: 30px;
+    }
+
+}

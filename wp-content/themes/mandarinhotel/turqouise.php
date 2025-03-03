@@ -49,8 +49,8 @@ get_header();
     ?>
 
             <?php if ($row_index == 1): ?>
-                <div class="row padding-rl">
-                    <div class="col-md-6">
+                <div class="row padding-rl ">
+                    <div class="col-md-6 first-row-content">
                         <div class="container-intro">
                             <h2> <?php the_sub_field('title') ?> </h2>
                             <div>
@@ -58,7 +58,7 @@ get_header();
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 first-row-image">
                         <div class="content-img">
                             <img src="<?php the_sub_field('image') ?>" alt="restaurant-img">
                         </div>
@@ -87,7 +87,7 @@ get_header();
 
             <?php if ($row_index == 3): ?>
                 <div class="row padding-rl space-tp">
-                    <div class="col-md-6">
+                    <div class="col-md-6 first-row-content">
                         <div class="container-intro px-0 justify-content-center">
                             <h2> <?php the_sub_field('title') ?> </h2>
                             <div>
@@ -95,7 +95,7 @@ get_header();
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 first-row-image">
                         <div class="content-img">
                             <img src="<?php the_sub_field('image') ?>" alt="restaurant-img">
                         </div>

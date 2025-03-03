@@ -359,3 +359,99 @@ footer #menu-header-1 li{
 .newsletter-heading{
     margin-top: 11%;
 }
+
+@media(max-width:500px){
+    .navbar-custom .navbar-brand img {
+        width: 55px;
+        height: auto;
+    }
+
+    .navbar .container-fluid.px-5 {
+        padding: 0 10px !important;
+    }
+
+    button.navbar-toggler.text-white {
+        background-color: #fff;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+    }
+
+    header .navbar-collapse {
+        padding: 15px 0px;
+    }
+
+    .btn-read{
+        font-size: 15px;
+    }
+
+    .newsletter .content h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .newsletter .content .description {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .map-footer .map iframe {
+        height: 350px;
+    }
+
+    .map-footer .social-info{
+        display: block;
+        padding: 20px 10px;
+    }
+
+    .map-footer .social-info h3 {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+    .map-footer .link-item a, .map-footer .link-item span {
+        font-size: 14px;
+    }
+
+    .map-footer .social-info .item {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .primary-footer {
+        padding: 40px 0;
+    }
+
+    footer #menu-header-1{
+        justify-content: center;
+    }
+
+    .footer .copyright, .footer .copyright a{
+        font-size: 10px;
+    }
+
+    .map-footer .link-item{
+        justify-content: center;
+    }
+
+    .padding-rl {
+        padding: 0 10px;
+    }
+
+    section.newsletter .content h2 {
+        text-align: left;
+    }
+
+    .navbar-collapses.show-nav{
+        display: block !important;
+    }
+
+    .navbar-collapses{
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+        padding: 15px 0px;
+        display: none;
+    }
+
+}

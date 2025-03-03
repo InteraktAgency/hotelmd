@@ -86,3 +86,21 @@
 .image-services{
     margin-top:50px;
 }
+
+@media(max-width:500px){
+    .service-hotel {
+        margin-top: 30%;
+    }
+
+    .heading .title{
+        width: 100%;
+    }
+
+    .heading {
+        padding: 0 10px;
+    }
+
+    .heading .title h1{
+        font-size: 25px;
+    }
+}

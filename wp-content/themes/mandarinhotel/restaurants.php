@@ -135,7 +135,7 @@ get_header();
                 if ($row_index == 2):
         ?>
         <div class="row">
-            <div class="col-md-6 padding-rl">
+            <div class="col-md-6 padding-rl order-content">
                 <div class="container-intro">
                     <h2><?php the_sub_field('title') ?></h2>
                     <div class="container-info-p">

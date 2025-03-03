@@ -49,3 +49,36 @@
     height: 100%;
     object-fit: cover;
 }
+
+@media(max-width:500px){
+    .heading .title{
+        width: 100%;
+    }
+
+    .heading {
+        padding: 0 10px;
+    }
+
+    .heading .title h1{
+        font-size: 25px;
+    }
+
+    .heading .description{
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .image-services .item {
+        height: auto;
+    }
+
+    .image-services .item img {
+        height: auto;
+        object-fit: contain;
+    }
+
+    .hero-section img {
+        height: 200px !important;
+    }
+
+}

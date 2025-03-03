@@ -78,3 +78,31 @@
     transform: scale(1.1);
     transition: .5s;
 }
+
+@media(max-width:500px){
+    .hero-section img {
+        height: 300px;
+    }
+
+    .heading .title{
+        width: 100%;
+    }
+
+    .heading {
+        padding: 0 10px;
+    }
+
+    .heading .title h1{
+        font-size: 25px;
+    }
+
+    .heading .description {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .list-offers .item h2{
+        font-size: 15px;
+    }
+
+}

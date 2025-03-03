@@ -46,3 +46,19 @@ button {
 button:hover {
     background-color: gray;
 }
+
+
+@media(max-width:500px){
+    .job-section {
+        margin-top: 30%;
+    }
+
+    .container-page {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .container-page h1{
+        font-size: 25px;
+    }
+}

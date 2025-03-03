@@ -20,7 +20,7 @@ get_header();
 
     <div class="section-content">
         <div class="row align-items-center">
-            <div class="col-md-6">
+            <div class="col-md-6 order-class">
                 <div class="content">
                     <h2><?php echo the_field('title') ?></h2>
                     <div class="description">

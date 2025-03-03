@@ -195,3 +195,64 @@
     margin-top: 70px;
     padding: 0 3px;
 }
+
+
+@media(max-width:500px){
+    .heading .title{
+        width: 100%;
+    }
+
+    .hebergement-services .heading .description{
+        width: 100%;
+    }
+
+    .heading {
+        padding: 0 10px;
+    }
+
+    .hebergement-services {
+        margin-top: 30px;
+    }
+
+    .hebergement-services .heading .description {
+        font-size: 14px;
+    }
+
+    .list-services{
+        display: block;
+    }
+
+    .items-services {
+        margin-top: 40px;
+        padding: 0 10px;
+    }
+
+    .list-services .item {
+        margin-bottom: 15px;
+    }
+
+    .restaurant-intro-section .container-intro {
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+
+    .restaurant-intro-section p, .container-info-p {
+        font-size: 14px;
+    }
+    
+    .restaurant-intro-section {
+        margin-top: 60px;
+    }
+
+    .content-img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .hebergement-services .list-services .item-content{
+        margin-bottom:30px;
+    }
+
+
+}

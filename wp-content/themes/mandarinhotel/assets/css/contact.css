@@ -73,3 +73,35 @@
     letter-spacing: 0.24px;
 }
 
+
+@media(max-width:500px){
+    .heading .title{
+        width: 100%;
+    }
+
+    .heading {
+        padding: 0 10px;
+    }
+
+    .heading .title h1{
+        font-size: 25px;
+    }
+
+    .heading .description {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .contactus-heading .heading .description {
+        width: 100%;
+    }
+
+    .contactus-heading {
+        margin: 20px 0;
+    }
+
+    #contactForms{
+        padding: 0 30px;
+    }
+}
+

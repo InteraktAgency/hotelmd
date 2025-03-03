@@ -85,3 +85,65 @@
     height: 424px;
     object-fit:cover;
 }
+
+
+@media(max-width:500px){
+    .service-organisation{
+        margin-top: 30%;
+    }
+
+    .heading .title{
+        width: 100%;
+    }
+
+    .heading {
+        padding: 0 10px;
+    }
+
+    .heading .title h1{
+        font-size: 25px;
+    }
+
+    .heading .description {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .section-content {
+        padding: 0 10px;
+        margin-top: 40px;
+    }
+
+    .section-content .content h2{
+        font-size: 25px;
+    }
+
+    .section-content .description{
+        font-size: 14px;
+    }
+
+    .section-content .description p{
+        font-size: 14px;
+    }
+
+    .order-class{
+        order: 2;
+    }
+
+    .section-content .image {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .gal-fancy .gal-item img {
+        height: 350px;
+    }
+
+    .gal-item {
+        margin-bottom: 20px;
+    }
+
+    .section-content .image{
+        height: auto;
+    }
+}

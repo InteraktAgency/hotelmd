@@ -229,3 +229,108 @@
 .gal-rest{
     padding: 0 15px;
 }
+
+@media(max-width:500px){
+    .section-brasserie {
+        margin-top: 30%;
+    }
+
+    .content-book-now {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 5px 10px;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .btn-book {
+        background-color: #ffffff;
+        color: #000;
+        border: 1px solid #000;
+        font-size: 14px;
+    }
+
+    .nav-tabs{
+        display: block;
+    }
+
+    .container-intro {
+        margin-top: 30px;
+        margin-left: 0;
+        padding: 0 10px !important;
+        margin-bottom: 30px;
+    }
+
+    .restaurant-intro-section .container-intro h2 {
+        margin-bottom: 20px;
+    }
+
+    .container-info-p p, .container-info-p {
+        font-size: 14px;
+    }
+
+    .btn-cart {
+        font-size: 14px;
+        margin-top: 0;
+    }
+
+    .list-services{
+        display: block;
+    }
+
+    .list-services .item img {
+        width: 100%;
+        height: 268px;
+    }
+
+    .list-services .item-content {
+        padding: 20px 10px;
+        height: auto;
+    }
+
+    .list-services .read-more {
+        text-align: center;
+    }
+
+    .list-services .item h2{
+        font-size: 25px;
+        left: 10px;
+        top: 35px;
+        padding-bottom: 10px;
+    }
+
+    .list-services .item-featured a::after {
+        position: absolute;
+        content: '';
+        background-color: #14161742;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        transition: .5s;
+    }
+
+    .list-services .item-featured h2:after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        transition: .5s;
+    }
+
+    .list-services .item-content{
+        font-size: 14px;
+    }
+
+    .order-content{
+        order: 2;
+    }
+
+}

@@ -74,3 +74,70 @@
 .detail-content{
     margin-top: 60px;
 }
+
+@media(max-width:500px){
+    .hero-section img {
+        height: 300px !important;
+    }
+
+    .heading .title{
+        width: 100%;
+    }
+
+    .heading {
+        padding: 0 10px;
+    }
+
+    .heading .title h1{
+        font-size: 25px;
+    }
+
+    .heading .description {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .detail-content .card-details .card-content .description {
+        padding-right: 0;
+    }
+
+    .detail-content .card-details .card-content {
+        background: #ffff;
+        padding: 0px;
+        color: #000;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Poppins';
+        width: 100%;
+    }
+    
+    .card-details{
+        display: block;
+    }
+
+    .detail-content {
+        margin-top: 0;
+    }
+
+    .detail-content .card-details .card-content h2 {
+        color: #000;
+        font-size: 20px;
+        margin-bottom: 23px;
+        margin-top: 10%;
+    }
+
+    .detail-content .card-img {
+        margin-left: 0;
+    }
+
+    .detail-content .card-img {
+        margin-left: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .card-img img {
+        width: 100%;
+    }
+
+}

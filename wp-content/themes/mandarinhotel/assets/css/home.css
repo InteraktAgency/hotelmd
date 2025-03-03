@@ -308,3 +308,186 @@
     width: 62px;
     height: auto;
 }
+
+@media(max-width:500px){
+    .slider .swiper-slide{
+        height: 550px;
+    }
+
+    section.slider {
+        position: relative;
+        height: 550px;
+    }
+
+    .slider .swiper-slide img {
+        width: 100%;
+        height: 550px;
+    }
+
+    .slider .swiper-button-next img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .slider .swiper-button-prev img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .heading .title{
+        width: 100%;
+    }
+
+    .heading .title h1{
+        font-size: 25px;
+    }
+
+    .heading {
+        padding: 0 10px;
+    }
+
+    .heading .description{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .heading .description p{
+        font-size: 14px;
+    }
+
+    .list-services{
+        display: block;
+    }
+
+    .list-services .item img {
+        width: 100%;
+        height: 268px;
+    }
+
+    .list-services .item{
+        margin-bottom: 40px;
+    }
+
+    .list-services .item-content {
+        padding: 20px 10px;
+        height: auto;
+    }
+
+    .list-services .read-more {
+        text-align: center;
+    }
+
+    .list-services .item h2{
+        font-size: 25px;
+        left: 10px;
+        top: 35px;
+        padding-bottom: 10px;
+    }
+
+    .list-services .item-featured a::after {
+        position: absolute;
+        content: '';
+        background-color: #14161742;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        transition: .5s;
+    }
+
+    .list-services .item-featured h2:after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        transition: .5s;
+    }
+
+    .galerie .img img {
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+    }
+
+    .galerie .content-gal h2{
+        font-size: 30px;
+    }
+
+    .galerie .content-gal {
+        top: 0;
+        bottom: 0;
+        right: 10px;
+        height: auto;
+        width: 140px;
+    }
+
+    .galerie .btn-read {
+        margin-top: 0;
+        padding: 10px 20px;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
+    .galerie .img {
+        height: 300px;
+    }
+ 
+
+    .items-turk .list-img{
+        width: 100%;
+    }
+
+    .items-turk .list-img .item {
+        height: 250px;
+    }
+
+    .items-turk .list-img .item img {
+        height: 250px;
+    }
+
+    .items-turk .img-right{
+        width: 23%;
+    }
+
+    .items-turk .img-right img{
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .items-turk{
+        height:250px;
+    }
+
+    .content-turk h2{
+        font-size: 30px;
+    }
+
+    .section-turk .content-turk {
+        bottom: 70px;
+    }
+
+    .experiences-hotel .item{
+        height: 300px;
+    }
+
+    .experiences-hotel .item .img-featured {
+        height: 300px;
+    }
+
+    .experiences-hotel .item h3{
+        font-size: 25px;
+        left: 20px;
+    }
+
+    .experiences-hotel .icon img{
+        width: 45px;
+    }
+
+
+}
