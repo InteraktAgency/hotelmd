@@ -1,5 +1,5 @@
 .heading .title h1 {
-    font-family: "Palatino Linotype";
+    font-family: "Poppins";
     font-size: 44px;
     font-weight: 400;
     letter-spacing: -0.825px;
@@ -56,7 +56,7 @@
 
 .detail-content .card-details .card-content h2{
     color: #FFF;
-    font-family: "Palatino Linotype";
+    font-family: "Poppins";
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
@@ -74,6 +74,24 @@
 .detail-content{
     margin-top: 60px;
 }
+
+.btn-booking{
+    margin-top: 20px;
+    display: block;
+}
+
+.btn-booking a{
+    border-radius: 8px;
+    background: #FFF;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    color: #000;
+    padding: 17px 15px;
+    display: block;
+    width: max-content;
+    font-size: 12px;
+}
+
 
 @media(max-width:500px){
     .hero-section img {

@@ -12,10 +12,9 @@
 }
 
 .content-book-now {
-    display: flex;
-    justify-content: center;
-    gap: 180px;
+    display: block;
     padding: 20px 0;
+    text-align: center;
 }
 
 .btn-book,
@@ -74,9 +73,11 @@
 .restaurant-intro-section .container-intro h2 {
     color: #000;
     font-size: 24px;
-    font-weight: 400;
     letter-spacing: -0.42px;
     text-transform: uppercase;
+    font-family: 'poppins';
+    font-weight: 700;
+    margin-bottom: 30px;
 }
 
 .container-intro {
@@ -216,6 +217,7 @@
     background-color: #ffffff;
     color: #000;
     border: 1px solid #000;
+    border-radius: 8px;
 }
 
 .nav {
@@ -223,11 +225,21 @@
 }
 
 .section-brasserie{
-    margin-top: 11%;
+    margin-top: 3%;
 }
 
 .gal-rest{
     padding: 0 15px;
+}
+
+.logo-awards{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo-awards img{
+    text-align: center;
 }
 
 @media(max-width:500px){

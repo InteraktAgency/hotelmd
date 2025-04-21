@@ -24,6 +24,9 @@ get_header();
             <div class="description">
                 <?php the_content(); ?>
             </div>
+            <div class="btn-booking">
+                <a href="#">Réserver maintenant</a>
+            </div>
         </div>
         <div class="card-img">
             <img src="<?php the_field('image_offre') ?>" alt="offre">

@@ -31,27 +31,22 @@ get_header();
     </div>
 </section>
 
-<section class="service-hotel">
-    <div class="heading">
-        <div class="title">
-            <h1>
-                Le Mandarin Palace, bien plus qu'un Hôtel à Tanger !
-            </h1>
+<section class="about-hotel container-fluid px-5">
+    <div class="row">
+        <div class="col-md-8">
+            <h1><?php the_field('title') ?></h1>
+            <h2><?php the_field('sub_title') ?></h2>
+            <div class="content">
+                <?php the_field('content') ?>
+            </div>
         </div>
-        <div class="description">
-            <p>
-                Le Mandarin Palace Hotel Tanger vous invite à découvrir l'univers raffiné de ses chambres et
-                suites. Tous les décors ont été étudiés avec soin pour vous offrir une expérience mémorable dans
-                un cadre paisible.
-            </p>
-            <p>
-                Le Mandarin Palace Hotel Tanger vous invite à découvrir l'univers raffiné Depuis votre suite,
-                profitez d'une vue imprenable sur la baie de la ville de Tanger.
-                Réservez dès maintenant pour vivre une expérience unique dans nos chambres d'exception !
-            </p>
+        <div class="col-md-4">
+            <img src="<?php the_field('image'); ?>" alt="Mandarin palace tanger">
         </div>
     </div>
+</section>
 
+<section class="service-hotel">
     <div class="items-services">
         <div class="list-services">
     <?php
@@ -175,7 +170,7 @@ get_header();
                     <a href="#">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/instapic.jpg" alt="experience" class="img-featured">
                         <div class="icon">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/snapwhite.svg" alt="Snap">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/tiktok.svg" alt="Tiktok">
                         </div>
                     </a>
                 </div>

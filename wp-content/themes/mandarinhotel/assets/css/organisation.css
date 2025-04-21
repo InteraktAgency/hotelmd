@@ -1,9 +1,9 @@
 .service-organisation{
-    margin-top:11%;
+    margin-top:3%;
 }
 
 .heading .title h1 {
-    font-family: "Palatino Linotype";
+    font-family: "Poppins";
     font-size: 44px;
     font-weight: 400;
     letter-spacing: -0.825px;
@@ -27,7 +27,7 @@
 
 .section-content .content h2{
     color: #141617;
-    font-family: "Palatino Linotype";
+    font-family: "Poppins";
     font-size: 24px;
     font-style: normal;
     font-weight: 400;

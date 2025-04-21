@@ -67,6 +67,7 @@ if( have_rows('mandarin_block') ):
     <div class="row padding-rl">
         <div class="col-md-6">
             <div class="container-intro">
+                <img src="<?php the_sub_field('awards') ?>" class="certif" alt="">
                 <h2> <?php the_sub_field('title') ?></h2>
                 <div>
                     <?php the_sub_field('content') ?>

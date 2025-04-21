@@ -78,7 +78,7 @@
 					<div class="nav-links  gap-2">
 						<?php
 						wp_nav_menu(array(
-							'theme_location' => 'main-menu',
+							'theme_location' => 'footer-menu',
 							'container' => false,
 							'menu_class' => 'nav-links',
 							'fallback_cb' => '__return_false',

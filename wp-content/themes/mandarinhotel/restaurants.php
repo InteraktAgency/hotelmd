@@ -7,10 +7,13 @@ get_header();
 ?>
 
 <section class="section-brasserie">
+    <div class="logo-awards">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/awards.png" alt="awards">
+    </div>
     <div class="content-book-now">
         <h2>la brasserie de paris tanger</h2>
         <div class="book-now">
-            <a href="#" class="btn btn-book">book new</a>
+            <a href="#" class="btn btn-book">book now</a>
         </div>
     </div>
     <div class="row mb-4">
@@ -103,7 +106,7 @@ get_header();
     <div class="content-book-now">
         <h2>la brasserie de paris tanger</h2>
         <div class="book-now">
-            <a href="#" class="btn btn-book">book new</a>
+            <a href="#" class="btn btn-book">book now</a>
         </div>
     </div>
     <div class="row mb-4">

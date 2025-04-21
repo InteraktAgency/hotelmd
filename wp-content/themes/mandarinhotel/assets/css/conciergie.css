@@ -1,6 +1,6 @@
 
 .heading .title h1 {
-    font-family: "Palatino Linotype";
+    font-family: "Poppins";
     font-size: 44px;
     font-weight: 400;
     letter-spacing: -0.825px;
@@ -16,7 +16,7 @@
 }
 
 .service-hotel {
-    margin-top: 11%;
+    margin-top: 3%;
 }
 
 .item-featured {
@@ -67,7 +67,7 @@
     top: 50px;
     left: 30px;
     color: #fff;
-    font-family: "Palatino Linotype";
+    font-family: "Poppins";
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: -0.6px;

@@ -23,7 +23,7 @@
 }
 
 .heading .title h1 {
-    font-family: "Palatino Linotype";
+    font-family: "Poppins";
     font-size: 44px;
     font-weight: 700;
     letter-spacing: -0.825px;
@@ -61,7 +61,7 @@
 .list-services {
     display: flex;
     align-items: start;
-    gap: 0;
+    gap: 3px;
 }
 
 .list-services .item img {
@@ -81,7 +81,7 @@
     top: 50px;
     left: 30px;
     color: #fff;
-    font-family: "Palatino Linotype";
+    font-family: "Poppins";
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: -0.6px;
@@ -223,7 +223,7 @@
 }
 
 .galerie .content-gal h2{
-    font-family: "Palatino Linotype";
+    font-family: "Poppins";
     font-weight: 700;
     font-size: 50px;
     text-transform: uppercase;
@@ -234,7 +234,7 @@
 .galerie .btn-read{
     margin-top: 20px;
     border: 1px solid #fff;
-    background-color: transparent;
+    background: rgba(255, 255, 255, 0.20);
     padding: 10px 60px;
     border-radius: 0;
     font-family: 'Poppins';
@@ -243,6 +243,7 @@
     font-style: normal;
     font-weight: 500;
     text-transform: uppercase;
+    border-radius: 8px;
 }
 
 .galerie .btn-read:hover{
@@ -252,7 +253,7 @@
 }
 
 .content-turk h2{
-    font-family: "Palatino Linotype";
+    font-family: "Poppins";
     font-weight: 700;
     font-size: 50px;
     text-transform: uppercase;
@@ -282,7 +283,7 @@
     left: 30px;
     color: #fff;
     font-size: 35px;
-    font-family: "Palatino Linotype";
+    font-family: "Poppins";
     font-weight: 700; 
     text-transform: uppercase;
 }
@@ -308,6 +309,37 @@
     width: 62px;
     height: auto;
 }
+
+.about-hotel h1{
+    color: #282828;
+    font-family: 'Poppins';
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.about-hotel h2{
+    color: #282828;
+    font-family: 'Poppins';
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.about-hotel .content{
+    width: 70%;
+    padding-top: 45px;
+    display: block;
+}
+
+.about-hotel{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.about-hotel img{
+    width: 100%;
+}
+
 
 @media(max-width:500px){
     .slider .swiper-slide{
