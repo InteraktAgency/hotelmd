@@ -204,6 +204,10 @@ function enqueue_custom_styles()
 		wp_enqueue_style('restaurant-style', get_template_directory_uri() . '/assets/css/restaurant.css', array(), '1.1', 'all');
 	}
 
+	if (is_page(228) || get_post_type() === 'post') {
+		wp_enqueue_style('blog-style', get_template_directory_uri() . '/assets/css/blog.css', array(), '1.1', 'all');
+	}
+
 	
 
 	wp_enqueue_style('main-style', get_template_directory_uri() . '/assets/css/main.css', array(), '1.1', 'all');
