@@ -70,8 +70,8 @@ header {
 }
 
 .navbar-custom .navbar-brand img {
-    width: 92px;
-    height: 92px;
+    width: 100px;
+    height: 100px;
 }
 
 .navbar-custom .nav-link {
@@ -376,8 +376,11 @@ footer #menu-header-1 li{
 }
 
 @media(max-width:500px){
+    .navbar-custom{
+        padding: 0;
+    }
     .navbar-custom .navbar-brand img {
-        width: 55px;
+        width: 60px;
         height: auto;
     }
 

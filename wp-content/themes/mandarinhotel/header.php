@@ -28,7 +28,7 @@
 			<div class="container-fluid px-5">
 				<!-- Logo -->
 				<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/Mandarin-Logo.svg" alt="Mandarin Palace Tanger">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/mandarinpalace.png" alt="Mandarin Palace Tanger">
 				</a>
 
 				<!-- Bouton pour le menu mobile -->
