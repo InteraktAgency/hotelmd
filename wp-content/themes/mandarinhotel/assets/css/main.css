@@ -296,13 +296,21 @@ header {
 
 
 .newsletter{
-    background: url('../img/bg-newsletter.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color:#282828;
     padding: 105px 0;
+    position: relative;
+    margin-top: 50px;
 }
 
+.newsletter .img-overlay{
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 
 footer ul{
     display: flex;
@@ -315,9 +323,6 @@ footer #menu-header-1 li{
     margin-bottom: 10px;
 }
 
-.newsletter{
-    margin-top: 50px;
-}
 
 .newsletter .content h2{
     color: #fff;

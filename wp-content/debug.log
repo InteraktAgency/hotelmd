@@ -458,3 +458,40 @@ Stack trace:
 [02-May-2025 13:59:42 UTC]   Automatic theme updates starting...
 [02-May-2025 13:59:42 UTC]   Automatic theme updates complete.
 [02-May-2025 13:59:42 UTC] Automatic updates complete.
+[29-May-2025 13:44:46 UTC] Automatic updates starting...
+[29-May-2025 13:44:49 UTC]   Automatic plugin updates starting...
+[29-May-2025 13:44:49 UTC]   Automatic plugin updates complete.
+[29-May-2025 13:44:49 UTC]   Automatic theme updates starting...
+[29-May-2025 13:44:49 UTC]   Automatic theme updates complete.
+[29-May-2025 13:44:49 UTC] Automatic updates complete.
+[29-May-2025 14:16:11 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\home-page.php on line 94
+[29-May-2025 14:16:50 UTC] PHP Warning:  Undefined variable $esc_url in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\home-page.php on line 92
+[29-May-2025 14:16:50 UTC] PHP Fatal error:  Uncaught Error: Value of type null is not callable in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\home-page.php:92
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-includes\template-loader.php(106): include()
+#1 C:\laragon\www\hotelMd\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\index.php(17): require('C:\\laragon\\www\\...')
+#3 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\home-page.php on line 92
+[29-May-2025 14:16:50 UTC] PHP Warning:  Undefined variable $esc_url in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\home-page.php on line 92
+[29-May-2025 14:16:50 UTC] PHP Fatal error:  Uncaught Error: Value of type null is not callable in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\home-page.php:92
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-includes\template-loader.php(106): include()
+#1 C:\laragon\www\hotelMd\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\index.php(17): require('C:\\laragon\\www\\...')
+#3 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\home-page.php on line 92
+[29-May-2025 14:27:31 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\home-page.php:92
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-includes\template-loader.php(106): include()
+#1 C:\laragon\www\hotelMd\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\index.php(17): require('C:\\laragon\\www\\...')
+#3 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\home-page.php on line 92
+[29-May-2025 14:28:02 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\home-page.php:92
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-includes\template-loader.php(106): include()
+#1 C:\laragon\www\hotelMd\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\index.php(17): require('C:\\laragon\\www\\...')
+#3 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\home-page.php on line 92

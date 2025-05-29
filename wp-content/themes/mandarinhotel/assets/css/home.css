@@ -22,6 +22,10 @@
     right: 35px;
 }
 
+.swiper-button-next, .swiper-button-prev{
+    top: 65% !important;
+}
+
 .heading .title h1 {
     font-family: "Poppins";
     font-size: 44px;
@@ -219,7 +223,7 @@
     right: 40px;
     height: 100%;
     width: 215px;
-    transform: translateY(40%);
+    transform: translateY(35%);
 }
 
 .galerie .content-gal h2{
@@ -267,7 +271,7 @@
 
 .section-turk .content-turk{
     position: absolute;
-    bottom: 100px;
+    bottom: 160px;
     left:20px;
 }
 

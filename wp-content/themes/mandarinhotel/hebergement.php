@@ -19,7 +19,7 @@ get_header();
         <div class="description">
             <p class="fw-medium">
                 Découvrez nos hébergements raffinés, conçus pour offrir un confort inégalé et une expérience de
-                luxe unique à Tanger. Que vous choisissiez une chambre élégante ou une suite spacieuse, chaque
+                luxe unique à Tanger. <br> Que vous choisissiez une chambre élégante ou une suite spacieuse, chaque
                 détail est pensé pour rendre
                 votre séjour mémorable
             </p>

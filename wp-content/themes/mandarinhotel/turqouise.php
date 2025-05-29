@@ -9,8 +9,10 @@ get_header();
 <section class="hero-section-turquoise">
     <div class="row padding-rl">
         <div class="col-md-3">
-            <iframe src="https://www.youtube.com/embed/kLiSjdu4iDc" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            <iframe src="https://www.youtube.com/embed/<?php the_field('video'); ?>" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                width="100%"
+                height="500px">
             </iframe>
         </div>
         <div class="col-md-9">

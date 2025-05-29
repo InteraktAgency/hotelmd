@@ -13,6 +13,9 @@
 ?>
 
 <section class="newsletter">
+	<div class="img-overlay">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logom.png" alt="Newsletter">
+	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">

@@ -151,34 +151,9 @@ get_header();
 
             </div>
             <div class="col-md-6 p-0">
-                <div class="content-img pe-4">
+                <div class="content-img">
                     <img src="<?php the_sub_field('image') ?>" alt="restaurant-img">
                 </div>
-            </div>
-        </div>
-        <div class="items-services">
-            <div class="list-services">
-            <?php
-                if (have_rows('sub_posts')):
-                    while (have_rows('sub_posts')) : the_row();
-                ?>
-                <div class="item">
-                    <div class="item-featured">
-                        <a href="#">
-                            <img src="<?php the_sub_field('image') ?>" alt=" Image 1">
-                            <h2><?php the_sub_field('title') ?></h2>
-                        </a>
-                    </div>
-                    <div class="item-content">
-                        <?php the_sub_field('content') ?>
-                    </div>
-                </div>
-                <?php
-                endwhile;
-            else:
-            endif;
-            ?>
-
             </div>
         </div>
         <?php endif; ?>

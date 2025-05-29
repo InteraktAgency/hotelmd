@@ -13,7 +13,7 @@
 
 .hero-section-turquoise iframe {
     width: 100%;
-    height: 100%;
+    height: 630px;
 }
 
 .hero-section-turquoise {
@@ -85,7 +85,7 @@
 }
 
 .padding-rl{
-    align-items: center !important;
+    /* align-items: center !important; */
     padding: 0 20px !important;
 }
 
