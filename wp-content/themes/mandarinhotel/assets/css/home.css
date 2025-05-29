@@ -1,11 +1,11 @@
 .slider .swiper-slide img {
     width: 100%;
-    height: 700px;
+    height: 600px;
     object-fit: cover;
 }
 
 .slider .swiper-slide {
-    height: 700px;
+    height: 600px;
     overflow: hidden;
 }
 
@@ -344,20 +344,31 @@
     width: 100%;
 }
 
+.slider .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.slider .swiper-pagination-bullet-active{
+    background-color: #DC9171;
+}
+
 
 @media(max-width:500px){
     .slider .swiper-slide{
-        height: 550px;
+        height: 450px;
     }
 
     section.slider {
         position: relative;
-        height: 550px;
+        height: 450px;
     }
 
     .slider .swiper-slide img {
         width: 100%;
-        height: 550px;
+        height: 450px;
     }
 
     .slider .swiper-button-next img{

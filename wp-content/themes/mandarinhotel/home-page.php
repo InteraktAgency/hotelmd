@@ -21,13 +21,6 @@ get_header();
             </div>
         <?php endif; ?>
         <div class="swiper-pagination"></div>
-
-        <div class="swiper-button-prev">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/swiper-left.svg" alt="prev">
-        </div>
-        <div class="swiper-button-next">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/swiper-right.svg" alt="next">
-        </div>
     </div>
 </section>
 
