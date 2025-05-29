@@ -355,8 +355,14 @@
     background-color: #DC9171;
 }
 
+.slider{
+    position: relative;
+}
 
 @media(max-width:500px){
+    .slider{
+        position: relative;
+    }
     .slider .swiper-slide{
         height: 450px;
     }
