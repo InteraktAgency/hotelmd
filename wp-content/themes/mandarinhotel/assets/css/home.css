@@ -525,5 +525,21 @@
         width: 45px;
     }
 
+    .about-hotel{
+        padding: 0 10px !important;
+    }
+
+    .about-hotel h1{
+        font-size: 30px;
+    }
+
+    .about-hotel h2 {
+        font-size: 25px;
+    }
+
+    .about-hotel .content{
+        width: 100%;
+    }
+
 
 }

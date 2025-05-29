@@ -477,4 +477,19 @@ footer #menu-header-1 li{
         display: none;
     }
 
+    .mobile-align{
+        justify-content: center;
+    }
+
+    footer ul{
+        display: block;
+        padding: 0;
+    }
+
+    .footer .nav-links a{
+        border-right: none;
+        padding: 0;
+        margin: 10px 0;
+    }
+
 }

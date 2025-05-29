@@ -67,4 +67,7 @@
     .padd-content{
         padding: 0 15px;
     }
+    .hero-section img {
+        height: 200px !important;
+    }
 }

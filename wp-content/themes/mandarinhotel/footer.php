@@ -77,7 +77,7 @@
 			</div>
 			<!-- Navigation Links -->
 			<div class="col-md-6 ">
-				<div class="d-flex align-items-center h-100 ">
+				<div class="d-flex align-items-center h-100 mobile-align">
 					<div class="nav-links  gap-2">
 						<?php
 						wp_nav_menu(array(
