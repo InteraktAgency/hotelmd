@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
     const swiper = new Swiper('.swiper-slider', {
         direction: 'horizontal',
         loop: true,
@@ -7,5 +7,10 @@ jQuery(document).ready(function($) {
             el: '.swiper-pagination',
             clickable: true,
         },
-      });
+
+        autoplay: {
+            delay: 5000, 
+            disableOnInteraction: false, 
+        },
+    });
 })
