@@ -75,7 +75,7 @@ get_header();
     <div class="row g-0">
         <div class="col-md-6">
             <div class="video-ytb">
-                <iframe width="100%" height="400" src="https://www.youtube.com/embed/<?php the_field('video_youtube') ?>">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/<?php the_field('video_youtube') ?>"  title="MANDARIN PALACE TANGER - HOTEL 5 ÉTOILES">
                 </iframe>
             </div>
         </div>

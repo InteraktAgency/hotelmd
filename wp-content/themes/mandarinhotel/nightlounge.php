@@ -19,9 +19,7 @@ get_header();
         </div>
         <div class="description">
             <p>
-                Au cœur de notre établissement, l’énergie vibrante de la vie nocturne prend vie.
-                Des soirées enflammées aux rythmes envoûtants, Mandarin Boutiq Hotel est l’endroit où la fête ne
-                s’arrête jamais.
+                 <?php the_content(); ?>
             </p>
         </div>
     </div>

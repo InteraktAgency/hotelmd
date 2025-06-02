@@ -495,3 +495,9 @@ Stack trace:
 #2 C:\laragon\www\hotelMd\index.php(17): require('C:\\laragon\\www\\...')
 #3 {main}
   thrown in C:\laragon\www\hotelMd\wp-content\themes\mandarinhotel\home-page.php on line 92
+[02-Jun-2025 13:35:35 UTC] Automatic updates starting...
+[02-Jun-2025 13:35:38 UTC]   Automatic plugin updates starting...
+[02-Jun-2025 13:35:38 UTC]   Automatic plugin updates complete.
+[02-Jun-2025 13:35:39 UTC]   Automatic theme updates starting...
+[02-Jun-2025 13:35:39 UTC]   Automatic theme updates complete.
+[02-Jun-2025 13:35:39 UTC] Automatic updates complete.

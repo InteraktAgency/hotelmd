@@ -57,7 +57,7 @@ get_header();
                                     <?php the_sub_field('content') ?>
                                 </div>
                                 <div class="cart">
-                                    <a href="<?php the_sub_field('link') ?>" class="btn btn-cart ">la carte</a>
+                                    <a href="<?php the_sub_field('link') ?>" target="_blank" class="btn btn-cart ">la carte</a>
                                 </div>
                             </div>
 
@@ -145,7 +145,7 @@ get_header();
                         <?php the_sub_field('content') ?>
                     </div>
                     <div class="cart">
-                        <a href="<?php the_sub_field('ink') ?>" class="btn btn-cart ">la carte</a>
+                        <a href="<?php the_sub_field('link') ?>" target="_blank" class="btn btn-cart ">la carte</a>
                     </div>
                 </div>
 

@@ -36,7 +36,7 @@
 	<div class="row g-0">
 		<div class="col-md-6">
 			<div class="map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.504189762181!2d-5.760669524360264!3d35.78755377255317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c7f7e6946a8a3%3A0x5d2de7dff546ede5!2sH%C3%B4tel%20Mandarin%20Palace!5e0!3m2!1sfr!2sma!4v1740675126751!5m2!1sfr!2sma" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.504189762181!2d-5.760669524360264!3d35.78755377255317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c7f7e6946a8a3%3A0x5d2de7dff546ede5!2sH%C3%B4tel%20Mandarin%20Palace!5e0!3m2!1sfr!2sma!4v1740675126751!5m2!1sfr!2sma" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation"></iframe>
 			</div>
 		</div>
 		<div class="col-md-6">
