@@ -49,7 +49,9 @@
 						'walker' => new bootstrap_5_wp_nav_menu_walker()
 					));
 					?>
-
+					<a href="https://mandarinwordsysteme.booking-channel.com/" class="btn btn-book-now">
+						Réservez maintenant
+					</a>
 				</div>
 		</nav>
 	</header>
