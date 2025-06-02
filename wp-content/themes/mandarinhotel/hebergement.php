@@ -73,7 +73,7 @@ if( have_rows('mandarin_block') ):
                     <?php the_sub_field('content') ?>
                 </div>
                 <div class="read-more">
-                    <a href="<?php the_sub_field('link') ?>" class="btn btn-read">la carte</a>
+                    <a href="<?php the_sub_field('link') ?>" target="_blank" class="btn btn-read">la carte</a>
                 </div>
             </div>
 
@@ -100,7 +100,7 @@ if( have_rows('mandarin_block') ):
                     <?php the_sub_field('content') ?>
                 </div>
                 <div class="read-more">
-                    <a href="<?php the_sub_field('link') ?>" class="btn btn-read">la carte</a>
+                    <a href="<?php the_sub_field('link') ?>" target="_blank" class="btn btn-read">la carte</a>
                 </div>
             </div>
 
