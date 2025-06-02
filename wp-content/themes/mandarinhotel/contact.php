@@ -19,13 +19,7 @@ get_header();
         </div>
         <div class="description">
             <p>
-                Au cœur de notre établissement, l’énergie vibrante de la vie nocturne prend vie. Des soirées
-                enflammées aux
-                rythmes envoûtants, le 555 Hôtel Clubbing Marrakech est l’endroit où la fête ne s’arrête jamais.
-                Nos espaces de
-                divertissement exquis sont conçus pour créer des souvenirs mémorables, que ce soit dans nos
-                clubs animés, nos
-                bars élégants ou au bord de notre piscine scintillante.
+                <?php the_content(); ?>
             </p>
         </div>
     </div>
