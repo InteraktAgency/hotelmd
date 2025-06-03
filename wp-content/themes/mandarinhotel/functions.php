@@ -347,58 +347,7 @@ function offers_post_type()
 		'supports' => array('title', 'editor', 'thumbnail')
 	));
 }
-function handle_job_form_submission()
-{
-	check_ajax_referer('job_form_nonce', 'security');
-
-	$data = [
-		'name'    => sanitize_text_field($_POST['name']),
-		'email'   => sanitize_email($_POST['email']),
-		'phone'   => sanitize_text_field($_POST['phone']),
-		'post'    => sanitize_text_field($_POST['post']),
-		'message' => sanitize_textarea_field($_POST['message'])
-	];
-
-	$cv = $_FILES['cv'];
-	$upload_dir = wp_upload_dir();
-	$file_path = $upload_dir['path'] . '/' . basename($cv['name']);
-
-	if (move_uploaded_file($cv['tmp_name'], $file_path)) {
-		$to = 'youssef@interaktagency.com';
-		$subject = "New Application for {$data['post']}";
-		$headers = [
-			'Content-Type: text/html; charset=UTF-8',
-			'From: ' . $data['name'] . ' <' . $data['email'] . '>'
-		];
-
-		$body = "<h2>New Job Application</h2>
-            <p><strong>Name:</strong> {$data['name']}</p>
-            <p><strong>Email:</strong> {$data['email']}</p>
-            <p><strong>Phone:</strong> {$data['phone']}</p>
-            <p><strong>Position:</strong> {$data['post']}</p>
-            <p><strong>Message:</strong><br>{$data['message']}</p>
-            <p>CV attached: <a href='" . esc_url($upload_dir['url'] . '/' . basename($file_path)) . "'>" . basename($file_path) . "</a></p>";
-
-		add_filter('wp_mail_content_type', function () {
-			return 'text/html';
-		});
-		$sent = wp_mail($to, $subject, $body, $headers, [$file_path]);
-		remove_filter('wp_mail_content_type', 'set_html_content_type');
-
-		if ($sent) {
-			wp_send_json_success('Your application has been submitted successfully!');
-		} else {
-			wp_send_json_error('Failed to send application. Please try again.');
-		}
-	} else {
-		wp_send_json_error('Error uploading CV file.');
-	}
-}
-
-add_action('wp_ajax_handle_job_form', 'handle_job_form_submission');
-add_action('wp_ajax_nopriv_handle_job_form', 'handle_job_form_submission');
-
-
+ 
 
 
 // function handle_contact_form_submission()
@@ -447,24 +396,7 @@ add_action('wp_ajax_nopriv_handle_job_form', 'handle_job_form_submission');
 // add_action('wp_ajax_send_contact_form', 'handle_contact_form_submission');
 // add_action('wp_ajax_nopriv_send_contact_form', 'handle_contact_form_submission');
 
-// 1. Rename the function to match the hook
-// Looking to send emails in production? Check out our Email API/SMTP product!
-// In functions.php
-add_action('phpmailer_init', 'custom_mailtrap_smtp'); // Fixed function name
-
-function custom_mailtrap_smtp(PHPMailer $phpmailer)
-{
-	$phpmailer->isSMTP();
-	$phpmailer->Host       = SMTP_HOST;
-	$phpmailer->SMTPAuth   = true;
-	$phpmailer->Port       = SMTP_PORT;
-	$phpmailer->Username   = SMTP_USER;
-	$phpmailer->Password   = SMTP_PASS;
-	$phpmailer->SMTPSecure = SMTP_SECURE;
-	$phpmailer->From       = SMTP_FROM;
-	$phpmailer->FromName   = SMTP_FROM_NAME;
-}
-
+ 
 
 // Looking to send emails in production? Check out our Email API/SMTP product!
 
@@ -563,46 +495,46 @@ register_nav_menu('main-menu', 'Main menu');
 
 
 // TODO: Form contact
-function enqueue_contact_script() {
-    wp_enqueue_script('contact-form', get_template_directory_uri() . '/js/contact.js', array('jquery'), '1.0', true);
+// function enqueue_contact_script() {
+//     wp_enqueue_script('contact-form', get_template_directory_uri() . '/js/contact.js', array('jquery'), '1.0', true);
     
-    wp_localize_script('contact-form', 'ajax_object', array(
-        'ajaxurl' => admin_url('admin-ajax.php'),
-        'security' => wp_create_nonce('contact_form_nonce')
-    ));
-}
-add_action('wp_enqueue_scripts', 'enqueue_contact_script');
+//     wp_localize_script('contact-form', 'ajax_object', array(
+//         'ajaxurl' => admin_url('admin-ajax.php'),
+//         'security' => wp_create_nonce('contact_form_nonce')
+//     ));
+// }
+// add_action('wp_enqueue_scripts', 'enqueue_contact_script');
 
 
-add_action('wp_ajax_send_contact_form', 'handle_send_contact_form');
-add_action('wp_ajax_nopriv_send_contact_form', 'handle_send_contact_form');
+// add_action('wp_ajax_send_contact_form', 'handle_send_contact_form');
+// add_action('wp_ajax_nopriv_send_contact_form', 'handle_send_contact_form');
 
-function handle_send_contact_form() {
-    check_ajax_referer('contact_form_nonce', 'security');
+// function handle_send_contact_form() {
+//     check_ajax_referer('contact_form_nonce', 'security');
 
-    $subject = sanitize_text_field($_POST['subject'] ?? '');
-    $name    = sanitize_text_field($_POST['name'] ?? '');
-    $email   = sanitize_email($_POST['email'] ?? '');
-    $message = sanitize_textarea_field($_POST['message'] ?? '');
+//     $subject = sanitize_text_field($_POST['subject'] ?? '');
+//     $name    = sanitize_text_field($_POST['name'] ?? '');
+//     $email   = sanitize_email($_POST['email'] ?? '');
+//     $message = sanitize_textarea_field($_POST['message'] ?? '');
 
-    if (empty($subject) || empty($name) || empty($email) || empty($message)) {
-        wp_send_json_error("Tous les champs sont obligatoires.");
-    }
+//     if (empty($subject) || empty($name) || empty($email) || empty($message)) {
+//         wp_send_json_error("Tous les champs sont obligatoires.");
+//     }
 
-    if (!is_email($email)) {
-        wp_send_json_error("Email invalide.");
-    }
+//     if (!is_email($email)) {
+//         wp_send_json_error("Email invalide.");
+//     }
 
-    // Exemple : envoyer l'email
-    $to = 'youssef@interaktagency.com';
-    $headers = ['Content-Type: text/html; charset=UTF-8', "Reply-To: $name <$email>"];
-    $body = nl2br("Nom : $name\nEmail : $email\nSujet : $subject\n\n$message");
+//     // Exemple : envoyer l'email
+//     $to = 'youssef@interaktagency.com';
+//     $headers = ['Content-Type: text/html; charset=UTF-8', "Reply-To: $name <$email>"];
+//     $body = nl2br("Nom : $name\nEmail : $email\nSujet : $subject\n\n$message");
 
-    $sent = wp_mail($to, $subject, $body, $headers);
+//     $sent = wp_mail($to, $subject, $body, $headers);
 
-    if ($sent) {
-        wp_send_json_success("Message envoyé avec succès.");
-    } else {
-        wp_send_json_error("Échec de l'envoi. Essayez plus tard.");
-    }
-}
+//     if ($sent) {
+//         wp_send_json_success("Message envoyé avec succès.");
+//     } else {
+//         wp_send_json_error("Échec de l'envoi. Essayez plus tard.");
+//     }
+// }

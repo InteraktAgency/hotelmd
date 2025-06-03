@@ -501,3 +501,25 @@ Stack trace:
 [02-Jun-2025 13:35:39 UTC]   Automatic theme updates starting...
 [02-Jun-2025 13:35:39 UTC]   Automatic theme updates complete.
 [02-Jun-2025 13:35:39 UTC] Automatic updates complete.
+[03-Jun-2025 13:54:18 UTC] PHP Warning:  require_once(C:\laragon\www\hotelMd\wp-content\plugins\wpforms-lite/includes/class-db.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\plugins\wpforms-lite\src\WPForms.php on line 202
+[03-Jun-2025 13:54:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd\wp-content\plugins\wpforms-lite/includes/class-db.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\plugins\wpforms-lite\src\WPForms.php:202
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-content\plugins\wpforms-lite\src\WPForms.php(160): WPForms\WPForms->includes()
+#1 C:\laragon\www\hotelMd\wp-content\plugins\wpforms-lite\src\WPForms.php(140): WPForms\WPForms->init()
+#2 C:\laragon\www\hotelMd\wp-content\plugins\wpforms-lite\src\WPForms.php(594): WPForms\WPForms::instance()
+#3 C:\laragon\www\hotelMd\wp-content\plugins\wpforms-lite\wpforms.php(346): wpforms()
+#4 C:\laragon\www\hotelMd\wp-settings.php(526): include_once('C:\\laragon\\www\\...')
+#5 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#7 C:\laragon\www\hotelMd\wp-cron.php(46): require_once('C:\\laragon\\www\\...')
+#8 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\plugins\wpforms-lite\src\WPForms.php on line 202
+[03-Jun-2025 13:56:14 UTC] PHP Warning:  require_once(C:\laragon\www\hotelMd\wp-content\plugins\wpforms-lite\src\WPForms.php): Failed to open stream: No such file or directory in C:\laragon\www\hotelMd\wp-content\plugins\wpforms-lite\wpforms.php on line 343
+[03-Jun-2025 13:56:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\hotelMd\wp-content\plugins\wpforms-lite/src/WPForms.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\hotelMd\wp-content\plugins\wpforms-lite\wpforms.php:343
+Stack trace:
+#0 C:\laragon\www\hotelMd\wp-settings.php(526): include_once()
+#1 C:\laragon\www\hotelMd\wp-config.php(106): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\hotelMd\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\hotelMd\wp-admin\admin-ajax.php(22): require_once('C:\\laragon\\www\\...')
+#4 {main}
+  thrown in C:\laragon\www\hotelMd\wp-content\plugins\wpforms-lite\wpforms.php on line 343
