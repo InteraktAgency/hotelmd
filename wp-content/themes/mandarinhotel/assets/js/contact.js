@@ -1,12 +1,12 @@
 jQuery(document).ready(function () {
     $("#contactForms").submit(function (event) {
-        event.preventDefault();  
-        console.log('goo');
+        event.preventDefault();
         $(".error-msg").text("");
 
         let subject = $("#subject").val().trim();
         let name = $("#name").val().trim();
         let email = $("#email").val().trim();
+        let message = $("textarea[name='message']").val().trim();
         let isValid = true;
 
         if (subject === "") {
@@ -28,40 +28,35 @@ jQuery(document).ready(function () {
         }
 
         if (isValid) {
+            let formData = new FormData();
+            formData.append('subject', subject);
+            formData.append('name', name);
+            formData.append('email', email);
+            formData.append('message', message);
+            formData.append('action', 'send_contact_form');
+            formData.append('security', ajax_object.security);
 
-                var formData = new FormData(this);
-
-                formData.append('action', 'send_contact_form');
-                formData.append('security', ajax_object.security);
-
-                $.ajax({
-                    url: ajax_object.ajaxurl,
-                    type: 'POST',
-                    data: formData,
-                    contentType: false,
-                    processData: false,
-                    dataType: 'json',
-                    success: function(response) {
-                        console.log(response); 
-                        if (response.success) {
-                            Swal.fire({
-                                title: "Félicitations!",
-                                text: "votre message a été envoyée avec succès",
-                                icon: "success"
-                            }).then((result) => {
-                                if (result.isConfirmed) {
-                                    location.reload();
-                                }
-                            });
-                        } else {
-                            alert(response.data);
-                        }
+            $.ajax({
+                url: ajax_object.ajaxurl,
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                dataType: 'json',
+                success: function (response) {
+                    if (response.success) {
+                        Swal.fire("Félicitations !", "Votre message a été envoyé avec succès.", "success").then(() => {
+                            location.reload();
+                        });
+                    } else {
+                        Swal.fire("Erreur", response.data, "error");
                     }
-
-                });
-                formData.append('action', 'send_contact_form');
-                formData.append('security', ajax_object.security);
-
+                },
+                error: function (xhr, status, error) {
+                    Swal.fire("Erreur AJAX", error, "error");
+                    console.error("AJAX ERROR:", xhr.responseText);
+                }
+            });
         }
     });
 });
