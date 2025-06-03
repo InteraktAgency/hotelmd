@@ -13,7 +13,7 @@ get_header();
     <div class="content-book-now">
         <h2>la brasserie de paris tanger</h2>
         <div class="book-now">
-            <a href="#" class="btn btn-book">book now</a>
+            <a href="https://mandarinwordsysteme.booking-channel.com/" class="btn btn-book">book now</a>
         </div>
     </div>
     <div class="row mb-4">
@@ -106,7 +106,7 @@ get_header();
     <div class="content-book-now">
         <h2>la brasserie de paris tanger</h2>
         <div class="book-now">
-            <a href="#" class="btn btn-book">book now</a>
+            <a href="https://mandarinwordsysteme.booking-channel.com/" class="btn btn-book">book now</a>
         </div>
     </div>
     <div class="row mb-4">

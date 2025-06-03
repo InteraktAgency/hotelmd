@@ -25,10 +25,33 @@ get_header();
     </div>
 </section>
 <section class="contact-section">
-    <div class="container" >
-       
-            <?php echo do_shortcode('[contact-form-7 id="0893383" title="Contact us"]') ?>
-       
+    <div class="container">
+        <form id="contactForms" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-md-6">
+                    <textarea class="textarea-message" placeholder="Votre message..." name="message"></textarea>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject" />
+                        <div id="error-subject" class="error-msg text-danger"></div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Name/Surname" name="name" />
+                        <div id="error-name" class="error-msg text-danger"></div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="Email" name="email" />
+                        <div id="error-email" class="error-msg text-danger"></div>
+                    </div>
+
+                    <!-- Button -->
+                    <button type="submit" class="btn">
+                        Envoyer
+                    </button>
+                </div>
+            </div>
+        </form>
 
     </div>
 </section>
