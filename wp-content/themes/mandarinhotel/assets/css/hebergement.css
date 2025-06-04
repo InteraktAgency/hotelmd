@@ -254,5 +254,11 @@
         margin-bottom:30px;
     }
 
+    .restaurant-intro-section .container-intro img{
+        width: 80%;
+        display: block;
+        margin: 0px auto 25px auto;
+    }
+
 
 }

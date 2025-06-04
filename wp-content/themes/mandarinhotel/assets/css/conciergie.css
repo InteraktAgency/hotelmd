@@ -103,4 +103,8 @@
     .heading .title h1{
         font-size: 25px;
     }
+
+    .item h2{
+        right: 30px;
+    }
 }
